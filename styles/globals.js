@@ -25,8 +25,8 @@ export default createGlobalStyle`
     overflow-x: hidden;
   }
   img {
-    width: 100%;
-    max-width: 100%;
+    /* width: 100%;
+    max-width: 100%; */
   }
   ul {
     list-style: none;
