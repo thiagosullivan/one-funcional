@@ -4,6 +4,7 @@ import Link from 'next/link';
 import AboutUs from '../components/aboutUs';
 import BannerHome from '../components/banners/bannerHome';
 import Header from '../components/header';
+import OurPrice from '../components/ourPricing';
 import WhyChoseUs from '../components/whyUs';
 import { getAllPosts } from '../lib/dato-cms';
 
@@ -24,6 +25,7 @@ export default function Home({ posts }) {
         <BannerHome />
         <AboutUs />
         <WhyChoseUs />
+        <OurPrice />
         {/* {posts.map( (publi, index) => {
           return (
             <div key={index}>
