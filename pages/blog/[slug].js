@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import ReactMarkdown from "react-markdown";
 import SearchAside from "../../components/search/searchAside";
 import { getAllPosts } from "../../lib/dato-cms";
@@ -8,9 +9,29 @@ function PostPage({ post, posts}){
   console.log(posts, 'posts')
 
   return (
-    <>
-      <h1>{post.title}</h1>
+    <>      
       <img src={post.postImg.url}></img>
+      <h1>{post.title}</h1>
+      <div>
+        <div>
+          <span>{new Date(post.createdAt).toLocaleDateString("pt-BR", {day: "2-digit"})}</span>
+          <span>{new Date(post.createdAt).toLocaleDateString("pt-BR", {month: "short"})}</span>
+          <span>{new Date(post.createdAt).toLocaleDateString("pt-BR", {year: "numeric"})}</span>
+        </div>      
+        <div>
+          
+          <img src={post.author.authorPhoto.url} />
+          <p>{post.author.authorName}</p>
+        </div>
+        <div>
+          {post.categories.map((categories, index)=> {
+            return (
+              <div key={index}>{categories.categoryName}</div>
+            )
+          })}
+        </div>
+      </div>
+      
       <ReactMarkdown>{post.postTxt}</ReactMarkdown>
       {post.videoUrl ?
         <iframe
