@@ -1,4 +1,5 @@
 import ReactMarkdown from "react-markdown";
+import SearchAside from "../../components/search/searchAside";
 import { getAllPosts } from "../../lib/dato-cms";
 
 function PostPage({ post, posts}){
@@ -23,6 +24,7 @@ function PostPage({ post, posts}){
         </iframe>
         : ''
       }
+       <SearchAside />
     </>
   )
 }
