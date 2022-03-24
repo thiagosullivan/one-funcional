@@ -4,9 +4,9 @@ function PostCardResults({ postagens }) {
 
   return (
     <div>
-      {postagens.map(postagem => {
+      {postagens.map((postagem, index) => {
         return (
-          <div>{postagem.title}</div>
+          <div key={index}>{postagem.title}</div>
         )
       })}
     </div>
