@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 import { useRouter } from "next/router";
 import { SearchHeaderContainer, SearchHeaderContent } from './styles';
+import { IoClose } from 'react-icons/io5'
 
-function SearchHeader() {
+function SearchHeader({setSearchOpen}) {
   const [search, setSearch] = useState('')
   const [isSearchLoading, setIsSearchLoading] = useState(false)
 
@@ -22,6 +23,9 @@ function SearchHeader() {
           setSearch('')
         }}
       >
+        <div onClick={() => setSearchOpen(null)}>
+          <IoClose />
+        </div>
         <input
           placeholder="Pesquisar"
           type="text"
