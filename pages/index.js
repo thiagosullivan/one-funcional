@@ -5,6 +5,7 @@ import AboutUs from '../components/aboutUs';
 import BannerHome from '../components/banners/bannerHome';
 import Header from '../components/header';
 import OurPrice from '../components/ourPricing';
+import OurTeam from '../components/ourTeam';
 import WhyChoseUs from '../components/whyUs';
 import { getAllPosts } from '../lib/dato-cms';
 
@@ -26,6 +27,7 @@ export default function Home({ posts }) {
         <AboutUs />
         <WhyChoseUs />
         <OurPrice />
+        <OurTeam />
         {/* {posts.map( (publi, index) => {
           return (
             <div key={index}>
