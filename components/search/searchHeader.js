@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { useRouter } from "next/router";
 import { SearchHeaderContainer, SearchHeaderContent } from './styles';
 import { IoClose } from 'react-icons/io5'
+import { FaSearch } from 'react-icons/fa';
 
 function SearchHeader({setSearchOpen}) {
   const [search, setSearch] = useState('')
@@ -23,7 +24,7 @@ function SearchHeader({setSearchOpen}) {
           setSearch('')
         }}
       >
-        <div onClick={() => setSearchOpen(null)}>
+        <div className="closebtn__search__header" onClick={() => setSearchOpen(null)}>
           <IoClose />
         </div>
         <input
@@ -33,7 +34,7 @@ function SearchHeader({setSearchOpen}) {
           onChange={event => setSearch(event.target.value)}
         />
         <button type="submit">
-          Pesquisar
+          <FaSearch />
         </button>
       </SearchHeaderContent>
       {isSearchLoading && 'carregando...'}
