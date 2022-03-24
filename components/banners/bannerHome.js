@@ -1,5 +1,6 @@
-import React from 'react'
-import { BannerHomeContainer, BannerHomeContent } from './styles'
+import React from 'react';
+import Link from 'next/link';
+import { BannerHomeContainer, BannerHomeContent } from './styles';
 
 function BannerHome() {
   return (
@@ -8,6 +9,7 @@ function BannerHome() {
         <div className='bannerhome__txt'>
           <p>Shape your body</p>
           <h1>Be <span>Strong</span><br/>training hard</h1>
+          <Link href="/" passHref>Get Info</Link>
         </div>
       </BannerHomeContent>
     </BannerHomeContainer>

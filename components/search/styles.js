@@ -23,6 +23,7 @@ export const SearchHeaderContent = styled.form`
   position: relative;
   display: flex;
   align-items: center;
+  transition: all 150ms ease-in;
 
   .closebtn__search__header {
     color: ${({ theme }) => theme.white};

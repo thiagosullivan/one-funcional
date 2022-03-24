@@ -24,6 +24,17 @@ export const BannerHomeContent = styled.div`
     color: ${({ theme }) => theme.white};
     text-transform: uppercase;
     text-shadow: 5px 3px 5px rgb(0,0,0,.5);
+
+    a { 
+      background-color: ${({ theme }) => theme.primary};
+      width: max-content;
+      color: ${({ theme }) => theme.white};
+      text-shadow: none;
+      text-transform: uppercase;
+      font-family: 'Mulish', sans-serif;
+      font-size: 1.12rem;
+      padding: 15px 25px;
+    }
   }
 
   p {
