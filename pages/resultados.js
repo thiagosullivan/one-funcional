@@ -3,6 +3,7 @@ import Link from 'next/link';
 import PostCardResults from '../components/postCardResults';
 import { getAllPosts } from "../lib/dato-cms";
 import { ResultContainerPage } from '../styles/resultPage';
+import SearchAside from '../components/search/searchAside';
 
 export async function getStaticProps() {
   const posts = (await getAllPosts()) || [];
@@ -56,6 +57,7 @@ function ResultsPage({ posts }){
         )}
         <PostCardResults postagens={filteredPosts} />
       </ResultContainerPage>
+      <SearchAside />
     </>
   )
 }

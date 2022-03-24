@@ -26,7 +26,7 @@ export default function Home({ posts }) {
         {posts.map( (publi, index) => {
           return (
             <div key={index}>
-              <Link href={`blog/${publi.slug}`}>{publi.title}</Link>
+              <Link href={`blog/${publi.slug}`} passHref>{publi.title}</Link>
             </div>
           )
         })}

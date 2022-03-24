@@ -13,7 +13,7 @@ export default createGlobalStyle`
     }
     ::-webkit-scrollbar-thumb {
       background: ${({ theme }) => theme.primary};
-      border-radius: 10px;
+      border-radius: 5px;
     }
     ::-webkit-scrollbar-track{
       background: ${({ theme }) => lighten(0.4, theme.primary)};
