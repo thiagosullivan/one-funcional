@@ -13,7 +13,7 @@ export async function getStaticProps() {
 }
 
 function ResultsPage({ posts }){
-  console.log(posts, 'result page')
+  // console.log(posts, 'result page')
 
   const router = useRouter()
   const searchQuery = router.query.s
@@ -43,7 +43,7 @@ function ResultsPage({ posts }){
     })
   }
 
-  console.log(filteredPosts, "posts filtrados")
+  // console.log(filteredPosts, "posts filtrados")
 
   return (
     <>
