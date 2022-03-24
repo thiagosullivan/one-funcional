@@ -1,9 +1,9 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
-import BannerHome from '../components/banners/bannerHome'
-import Header from '../components/header'
-import { getAllPosts } from '../lib/dato-cms'
+import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
+import BannerHome from '../components/banners/bannerHome';
+import Header from '../components/header';
+import { getAllPosts } from '../lib/dato-cms';
 
 export default function Home({ posts }) {
 
