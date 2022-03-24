@@ -6,6 +6,7 @@ export const BannerHomeContainer = styled.div`
   background-position: center;
   width: 100%;
   height: 100vh;
+  margin-bottom: 2.81rem;
 `
 
 export const BannerHomeContent = styled.div`
