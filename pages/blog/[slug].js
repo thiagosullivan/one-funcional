@@ -1,4 +1,5 @@
-import Image from 'next/image'
+import Head from 'next/head';
+import Image from 'next/image';
 import ReactMarkdown from "react-markdown";
 import SearchAside from "../../components/search/searchAside";
 import { getAllPosts } from "../../lib/dato-cms";
@@ -9,7 +10,10 @@ function PostPage({ post, posts}){
   console.log(posts, 'posts')
 
   return (
-    <>      
+    <>
+    <Head>
+      <title>{post.title}</title>
+    </Head>
       <img src={post.postImg.url}></img>
       <h1>{post.title}</h1>
       <div>
