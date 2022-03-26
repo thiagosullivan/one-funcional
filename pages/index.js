@@ -7,11 +7,12 @@ import Header from '../components/header';
 import OurPrice from '../components/ourPricing';
 import OurTeam from '../components/ourTeam';
 import WhyChoseUs from '../components/whyUs';
-import { getAllPosts } from '../lib/dato-cms';
+import { getAllPosts, getAllTeam } from '../lib/dato-cms';
 
-export default function Home({ posts }) {
+export default function Home({ posts, team }) {
 
   console.log(posts)
+  console.log(team, 'team')
 
   return (
     <div>
@@ -27,7 +28,7 @@ export default function Home({ posts }) {
         <AboutUs />
         <WhyChoseUs />
         <OurPrice />
-        <OurTeam />
+        <OurTeam team={team}/>
         {/* {posts.map( (publi, index) => {
           return (
             <div key={index}>
@@ -44,11 +45,13 @@ export default function Home({ posts }) {
 }
 
 export const getStaticProps = async () => {
-  const posts = await getAllPosts()
+  const posts = await getAllPosts();
+  const team = await getAllTeam();
 
   return {
     props: {
-      posts: posts || []
+      posts: posts || [],
+      team: team || [],
     },
     revalidate: 120,
   }

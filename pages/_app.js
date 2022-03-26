@@ -2,6 +2,8 @@ import { createGlobalStyle, ThemeProvider } from 'styled-components'
 import theme from '../styles/theme';
 import GlobalStyles from '../styles/globals';
 import NextNProgress from 'nextjs-progressbar';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 function MyApp({ Component, pageProps }) {
   return (

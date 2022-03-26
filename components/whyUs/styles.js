@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const WhyChoseUsContainer = styled.section`
   background-color: ${({theme}) => theme.secondary};
-  padding: 4rem 0 6.8rem;
+  padding: 6.8rem 0;
 `;
 
 export const WhyChoseUsContent = styled.div`
