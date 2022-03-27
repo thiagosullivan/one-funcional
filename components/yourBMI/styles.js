@@ -32,10 +32,15 @@ export const BMICalculatorContainer = styled.section`
   border: 1px solid ${({theme}) => theme.primary};
   background-color: ${({theme}) => theme.secondary};
   padding: 3.1rem;
-  display: flex;
-  justify-content: space-between;
+  
   max-width: 850px;
   width: 100%;
+
+  .bmi__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+  }
 
   form {
 
@@ -62,7 +67,17 @@ export const BMICalculatorContainer = styled.section`
         height: 70px;
         font-size: 1.5rem;
         font-family: 'Mulish', sans-serif;
-      }      
+        padding-left: 1rem;
+      }
+
+      input[type='number'] {
+        -moz-appearance:textfield;
+      }
+
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
     }
 
     button {
@@ -98,6 +113,7 @@ export const BMICalculatorContainer = styled.section`
       font-size: 3.4rem;
       font-weight: bold;
       margin-bottom: .3rem;
+      min-height: 65px;
     }
 
     .calculator__explanation {
@@ -105,12 +121,24 @@ export const BMICalculatorContainer = styled.section`
       font-size: 0.87rem;
       font-weight: 400;
       line-height: 1.5;
+      
+      p {
+        &:first-child {
+          font-size: 1.5rem;
+          font-weight: bold;
+          margin-bottom: 1rem;
+          text-align: center;
+        }
+      }
     }
 
-    span {
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin-bottom: 1rem;
-    }
+  }
+
+  .bmi__note {
+    font-size: 0.75rem;
+    color: ${({theme}) => theme.white};
+    font-family: 'Mulish', sans-serif;
+    text-align: justify;
+    font-weight: bold;
   }
 `;
