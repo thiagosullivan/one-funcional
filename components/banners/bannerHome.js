@@ -9,7 +9,9 @@ function BannerHome() {
         <div className='bannerhome__txt'>
           <p>Shape your body</p>
           <h1>Be <span>Strong</span><br/>training hard</h1>
-          <Link href="/" passHref>Get Info</Link>
+          <Link href="/" passHref>
+            Get Info
+          </Link>
         </div>
       </BannerHomeContent>
     </BannerHomeContainer>
