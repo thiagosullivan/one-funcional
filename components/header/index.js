@@ -19,12 +19,14 @@ function Header() {
         <HeaderContent>
           <div className="logo__header">
             <Link href="/" passHref>
-              <Image
-                src={logoHeader}
-                width={135}
-                height={75}
-                atl="Logo One Funcional"
-              />
+              <a>
+                <Image
+                  src={logoHeader}
+                  width={135}
+                  height={75}
+                  atl="Logo One Funcional"
+                />
+              </a>
             </Link>
           </div>
           <NavigationHeader>
