@@ -6,6 +6,7 @@ import BannerHome from '../components/banners/bannerHome';
 import Header from '../components/header';
 import OurPrice from '../components/ourPricing';
 import OurTeam from '../components/ourTeam';
+import Testimonal from '../components/testimonial';
 // import Testimonal from '../components/testimonial';
 import WhyChoseUs from '../components/whyUs';
 import YourBMI from '../components/yourBMI';
@@ -32,7 +33,7 @@ export default function Home({ posts, team }) {
         <OurPrice />
         <OurTeam team={team}/>
         <YourBMI />
-        {/* <Testimonal /> */}
+        <Testimonal />
         {/* {posts.map( (publi, index) => {
           return (
             <div key={index}>
