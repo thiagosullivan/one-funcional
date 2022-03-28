@@ -32,11 +32,11 @@ function Header() {
           <NavigationHeader>
             <ul>
               <li><Link href="/">Home</Link></li>
-              <li><Link href="/about">About Us</Link></li>
-              <li><Link href="/classes">Classes</Link></li>
-              <li><Link href="/services">Services</Link></li>
-              <li><Link href="/our-team">Our Team</Link></li>
-              <li><Link href="/pages">Pages</Link></li>
+              <li><Link href="/#aboutUs">About Us</Link></li>
+              <li><Link href="/#services">Services</Link></li>
+              <li><Link href="/#classes">Classes</Link></li>
+              <li><Link href="/#ourTeam">Our Team</Link></li>
+              <li><Link href="/blog">Blog</Link></li>
               <li><Link href="/contact">Contact</Link></li>
             </ul>
           </NavigationHeader>

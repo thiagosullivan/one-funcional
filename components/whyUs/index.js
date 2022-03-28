@@ -8,7 +8,7 @@ import { WhyChoseUsBottom, WhyChoseUsContainer, WhyChoseUsContent } from './styl
 
 function WhyChoseUs() {
   return (
-    <WhyChoseUsContainer>
+    <WhyChoseUsContainer id="services">
       <WhyChoseUsContent>
         <h2>Why Chose Us</h2>
         <p>Push your limits forward</p>

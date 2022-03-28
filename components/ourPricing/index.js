@@ -4,7 +4,7 @@ import { BsArrowRightShort } from 'react-icons/bs';
 
 function OurPrice() {
   return (
-    <OurPriceContainer>
+    <OurPriceContainer id="classes">
       <OurPriceContent>
         <h2>Our Pricing</h2>
         <p>Pricing and packages</p>

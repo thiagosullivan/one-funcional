@@ -6,7 +6,7 @@ import { BsArrowRightShort } from 'react-icons/bs';
 
 function AboutUs() {
   return (
-    <AboutUsContainer>
+    <AboutUsContainer id="aboutUs">
       <AboutUsTop>
         <Image
           src={AboutUsImg}

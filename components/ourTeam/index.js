@@ -7,7 +7,10 @@ function OurTeam({team}) {
 
   const slidersInfos = team.map((team, index) => {
     return (
-      <TeamCard key={index} teamPhoto={team.teamPhoto.url}>
+      <TeamCard
+        key={index}
+        teamPhoto={team.teamPhoto.url}    
+      >
         <div className='teamCard__infos'>
           <div className='teamCard__infos__content'>
             <p>{team.teamName}</p>
@@ -43,7 +46,7 @@ function OurTeam({team}) {
   };
 
   return (
-    <OurTeamContainer>
+    <OurTeamContainer id="ourTeam">
       <OurTeamContent>
         <h2>Our Team</h2>
         <p className='ourTeam__subtitle'>Meet with trainers</p>

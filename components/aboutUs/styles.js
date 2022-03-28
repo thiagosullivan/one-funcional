@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const AboutUsContainer = styled.section`
-  margin-bottom: 9.3rem;
+  padding: 7rem 0 9.3rem;
 `;
 
 export const AboutUsTop = styled.div`

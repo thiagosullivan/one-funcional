@@ -46,7 +46,7 @@ function BlogHome({posts}) {
             )
           })}
         </PostsHomeContainer>
-        <Link href="/">
+        <Link href="/blog">
           <a className="postcontainer__btn">
             More Articles
           </a>
