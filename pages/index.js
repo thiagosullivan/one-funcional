@@ -3,6 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import AboutUs from '../components/aboutUs';
 import BannerHome from '../components/banners/bannerHome';
+import BlogHome from '../components/blogHome';
+import Footer from '../components/footer';
 import Header from '../components/header';
 import OurPrice from '../components/ourPricing';
 import OurTeam from '../components/ourTeam';
@@ -34,17 +36,10 @@ export default function Home({ posts, team }) {
         <OurTeam team={team}/>
         <YourBMI />
         <Testimonal />
-        {/* {posts.map( (publi, index) => {
-          return (
-            <div key={index}>
-              <Link href={`blog/${publi.slug}`} passHref>{publi.title}</Link>
-            </div>
-          )
-        })} */}
+        <BlogHome posts={posts}/>      
       </main>
 
-      <footer>        
-      </footer>
+      <Footer />
     </div>
   )
 }
