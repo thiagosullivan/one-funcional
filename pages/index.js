@@ -20,7 +20,7 @@ export default function Home({ posts, team }) {
   console.log(team, 'team')
 
   return (
-    <div>
+    <div id="homepage">
       <Head>
         <title>One Funcional</title>
         <meta name="description" content="A Funcional One vem trazer uma novo conceito em treinamento físico para pessoas que querem manter sua boa forma e buscar prevenir-se de novas lesões." />

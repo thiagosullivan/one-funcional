@@ -18,11 +18,13 @@ export default createGlobalStyle`
     ::-webkit-scrollbar-track{
       background: ${({ theme }) => lighten(0.4, theme.primary)};
     }
+    scroll-behavior: smooth;
   }
   body {
     background: ${props => props.theme.background};
     font: 400 1rem 'Montserrat', sans-serif;
     overflow-x: hidden;
+    scroll-behavior: smooth;
   }
   img {
     /* width: 100%;
@@ -35,6 +37,7 @@ export default createGlobalStyle`
     cursor: pointer;
   }
   a {
-    text-decoration: none;
+    text-decoration: none;    
   }
+
 `;
