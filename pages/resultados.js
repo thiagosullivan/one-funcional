@@ -1,7 +1,12 @@
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import PostCardResults from '../components/postCardResults';
+import Head from 'next/head';
 import { getAllPosts } from "../lib/dato-cms";
+
+import Header from '../components/header';
+import Footer from '../components/footer';
+
+import PostCardResults from '../components/postCardResults';
 import { ResultContainerPage } from '../styles/resultPage';
 import SearchAside from '../components/search/searchAside';
 
@@ -47,18 +52,29 @@ function ResultsPage({ posts }){
   // console.log(filteredPosts, "posts filtrados")
 
   return (
-    <>
-      <ResultContainerPage>
-        {filteredPosts.length === 0 && (
-          <div className='Search__error'>
-            <p>Desculpe, mas nenhuma publicação foi encontrada nessa busca.</p>
-            <Link href="/">Voltar para a Home</Link>
-          </div>
-        )}
-        <PostCardResults postagens={filteredPosts} />
-      </ResultContainerPage>
-      <SearchAside />
-    </>
+    <div id="result__page">
+      <Head>
+        <title>Blog | One Funcional</title>
+        <meta name="description" content="A Funcional One vem trazer uma novo conceito em treinamento físico para pessoas que querem manter sua boa forma e buscar prevenir-se de novas lesões." />
+        
+      </Head>
+
+      <Header />
+      <main>
+        <ResultContainerPage>
+          {filteredPosts.length === 0 && (
+            <div className='Search__error'>
+              <p>Desculpe, mas nenhuma publicação foi encontrada nessa busca.</p>
+              <Link href="/">Voltar para a Home</Link>
+            </div>
+          )}
+          <PostCardResults postagens={filteredPosts} />
+        </ResultContainerPage>
+        <SearchAside />
+      </main>
+
+      <Footer />
+    </div>
   )
 }
 
