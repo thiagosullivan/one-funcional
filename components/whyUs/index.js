@@ -19,6 +19,7 @@ function WhyChoseUs() {
                 src={stationaryBike}
                 width={50}
                 height={50}
+                alt='Icon'
               />
             </div>
             <h4>Modern equipment</h4>
@@ -30,6 +31,7 @@ function WhyChoseUs() {
                 src={pills}
                 width={50}
                 height={50}
+                alt='Icon'
               />
             </div>
             <h4>Healthy nutrition plan</h4>
@@ -41,6 +43,7 @@ function WhyChoseUs() {
                 src={dumbbell}
                 width={50}
                 height={50}
+                alt='Icon'
               />
             </div>
             <h4>Proffesponal training plan</h4>
@@ -52,6 +55,7 @@ function WhyChoseUs() {
                 src={heart}
                 width={50}
                 height={50}
+                alt='Icon'
               />
             </div>
             <h4>Unique to your needs</h4>

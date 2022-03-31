@@ -10,7 +10,7 @@ function AboutUs() {
       <AboutUsTop>
         <Image
           src={AboutUsImg}
-          alt="Mulher treinando"
+          alt="Mulher treinando"        
         />
         <AboutUsText>
           <span>Information about us</span>

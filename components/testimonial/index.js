@@ -47,6 +47,7 @@ function Testimonal({team}) {
                       src={testimonialImg}
                       width={85}
                       height={85}
+                      alt='John Doe'
                     />
                     <div className='testimonial__infos__names'>
                       <p className='testimonial__name'>John Doe</p>
@@ -64,6 +65,7 @@ function Testimonal({team}) {
                         src={testimonialImg}
                         width={85}
                         height={85}
+                        alt='John Doe'
                       />
                       <div className='testimonial__infos__names'>
                         <p className='testimonial__name'>John Doe</p>
@@ -81,6 +83,7 @@ function Testimonal({team}) {
                         src={testimonialImg}
                         width={85}
                         height={85}
+                        alt='John Doe'
                       />
                       <div className='testimonial__infos__names'>
                         <p className='testimonial__name'>John Doe</p>
@@ -98,6 +101,7 @@ function Testimonal({team}) {
                         src={testimonialImg}
                         width={85}
                         height={85}
+                        alt='John Doe'
                       />
                       <div className='testimonial__infos__names'>
                         <p className='testimonial__name'>John Doe</p>
