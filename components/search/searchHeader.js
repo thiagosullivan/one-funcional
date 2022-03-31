@@ -32,6 +32,7 @@ function SearchHeader({setSearchOpen}) {
           type="text"
           value={search}
           onChange={event => setSearch(event.target.value)}
+          required
         />
         <button type="submit">
           <FaSearch />

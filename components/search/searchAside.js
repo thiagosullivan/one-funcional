@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { useRouter } from "next/router";
+import { FaSearch } from 'react-icons/fa';
 import { SearchAsideContainer, SearchAsideContent } from './styles';
 
 function SearchAside() {
@@ -23,12 +24,16 @@ function SearchAside() {
           setSearch('')
         }}
       >
-        <input
-          placeholder="Pesquisar"
-          type="text"
-          value={search}
-          onChange={event => setSearch(event.target.value)}
-        />
+        <div className='aside__input__container'>
+          <input
+            placeholder="O que deseja procurar?"
+            type="text"
+            value={search}
+            onChange={event => setSearch(event.target.value)}
+            required
+          />
+          <FaSearch />
+        </div>
         <button type="submit">
           Pesquisar
         </button>
