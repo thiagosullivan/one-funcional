@@ -83,3 +83,34 @@ export const BannerContactContent = styled.div`
     }
   }
 `
+
+export const BannerNewsContainer = styled.div`
+  background-image: url(${props => props.bgUrl});
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+`
+
+export const BannerNewsContent = styled.div`
+  .bannerNews__txt {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;    
+
+    p {
+      color: ${({ theme }) => theme.white};
+      font-size: 5rem;
+      font-family: 'Oswald', sans-serif;
+
+      span {
+        color: ${({ theme }) => theme.primary};
+        font-family: 'Oswald', sans-serif;
+      }
+    }
+  }
+`
