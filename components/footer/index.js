@@ -6,6 +6,11 @@ import logoFooter from '../../assets/logo-header.png';
 import { FooterContainer, FooterContent, FooterContentBottom, FooterContentTop, SocialMediaFooter } from './styles'
 
 function Footer() {
+
+  function handleRedirect(url) {
+    window.open(url)
+  }
+
   return (
     <FooterContainer>
       <FooterContentTop>
@@ -15,6 +20,7 @@ function Footer() {
               <a>
                 <Image
                   src={logoFooter}
+                  alt='One Funcional'
                 />
               </a>
             </Link>
@@ -47,9 +53,9 @@ function Footer() {
           <div className='footer_colThree'>
             <h3>Contact</h3>
             <div className='colThree__infos'>
-              <p><strong>Address:</strong> Avenida Higienópolis,<br/>
-              Centro, Londrina - PR<br/>
-              86010-380</p>
+              <p><strong>Address:</strong> R. Montevidéu, 672<br/>
+              Guanabara, Londrina - PR<br/>
+              86050-020</p>
               <p><a href="tel:+43999999999"><strong>Phone:</strong> (43) 99999-9999</a><br /></p>
               <p><a href="mailto:contato@onefuncional.com.br"><strong>E-mail:</strong> contato@onefuncional.com.br</a></p>
             </div>
@@ -57,7 +63,7 @@ function Footer() {
         </FooterContent>
       </FooterContentTop>
       <FooterContentBottom>
-        © 2022 <strong>One Funcional</strong> - Desenvolvido por <strong>Digital Cloud Brasil</strong>.
+        © 2022 <strong>One Funcional</strong> - Desenvolvido por <strong>Digital Cloud Marketing</strong>.
       </FooterContentBottom>
     </FooterContainer>
   )

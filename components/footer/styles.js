@@ -92,6 +92,8 @@ export const SocialMediaFooter = styled.div`
   svg {
     font-size: 1.7rem;
     margin: 0 0.93rem;
+    cursor: pointer;
+    transition: all 150ms ease-in-out;
 
     &:last-child {
       margin-right: 0;
@@ -99,6 +101,10 @@ export const SocialMediaFooter = styled.div`
 
     &:first-child {
       margin-left: 0;
+    }
+
+    &:hover {
+      color: ${({theme}) => darken(0.5, theme.white)};
     }
   }
 `;
