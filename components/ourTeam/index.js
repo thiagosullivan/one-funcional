@@ -15,6 +15,7 @@ function OurTeam({team}) {
           <div className='teamCard__infos__content'>
             <p>{team.teamName}</p>
             <span>{team.teamRole}</span>
+            <p className='degrees'>{team.degrees}</p>
             <div className='teamCard__socialmedia'>
               <a href={team.fbLink} rel="noreferrer noopener" target="_blank"><FaFacebookF/></a>
               <a href={team.igLink} rel="noreferrer noopener" target="_blank"><FaInstagram/></a>

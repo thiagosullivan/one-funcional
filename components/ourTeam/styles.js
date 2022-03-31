@@ -98,7 +98,7 @@ export const TeamCard = styled.div`
 
   &:hover > {
     .teamCard__infos {
-      transform: skew(0deg, -10deg) translateY(0px);
+      transform: skew(0deg, -10deg) translateY(-75px);
     }
   }
 
@@ -109,7 +109,7 @@ export const TeamCard = styled.div`
     border-top: 2px solid ${({theme}) => theme.primary};
     padding-top: 2rem;    
     position: absolute;
-    bottom: -32px;
+    bottom: -120px;
     transform: skew(0deg, -10deg) translateY(203px);
     transition: all 200ms ease-in-out;
 
@@ -127,7 +127,15 @@ export const TeamCard = styled.div`
         font-size: 1.5rem;
         margin-bottom: .2rem;
       }
-  
+      
+      .degrees {
+        font-size: 0.86rem;
+        font-family: 'Mulish', sans-serif;
+        font-weight: 400;
+        padding: 0 25px 15px;
+        text-align: center;
+        min-height: 70px;
+      }
       span {
         font-family: 'Mulish', sans-serif;
         font-weight: 400;
