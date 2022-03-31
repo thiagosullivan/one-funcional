@@ -1,12 +1,14 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import ReactMarkdown from "react-markdown";
+import Aside from '../../components/aside';
+import BannerNews from '../../components/banners/bannerNews';
 import Footer from '../../components/footer';
 import Header from '../../components/header';
+import PostBlogPage from '../../components/postBlogPage';
 import SearchAside from "../../components/search/searchAside";
-import { getAllPosts } from "../../lib/dato-cms";
+import { getAllCategories, getAllPosts } from "../../lib/dato-cms";
+import { PostPageContainer, PostPageContainerBottom } from '../../styles/postPage';
 
-function PostPage({ post, posts}){
+function PostPage({ post, posts, categories}){
 
   console.log(post, 'post')
   console.log(posts, 'posts')
@@ -16,49 +18,16 @@ function PostPage({ post, posts}){
       <Head>
         <title>{post.title} | One Funcional</title>
         <meta name="description" content="A Funcional One vem trazer uma novo conceito em treinamento físico para pessoas que querem manter sua boa forma e buscar prevenir-se de novas lesões." />
-        
       </Head>
 
       <Header />
-      <main>
-        <img src={post.postImg.url}></img>
-        <h1>{post.title}</h1>
-        <div>
-          <div>
-            <span>{new Date(post.createdAt).toLocaleDateString("pt-BR", {day: "2-digit"})}</span>
-            <span>{new Date(post.createdAt).toLocaleDateString("pt-BR", {month: "short"})}</span>
-            <span>{new Date(post.createdAt).toLocaleDateString("pt-BR", {year: "numeric"})}</span>
-          </div>      
-          <div>
-            
-            <img src={post.author.authorPhoto.url} />
-            <p>{post.author.authorName}</p>
-          </div>
-          <div>
-            {post.categories.map((categories, index)=> {
-              return (
-                <div key={index}>{categories.categoryName}</div>
-              )
-            })}
-          </div>
-        </div>
-        
-        <ReactMarkdown>{post.postTxt}</ReactMarkdown>
-        {post.videoUrl ?
-          <iframe
-            width="560"
-            height="315"
-            src={post.videoUrl}
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen>
-          </iframe>
-          : ''
-        }
-        <SearchAside />
-      </main>
-
+      <PostPageContainer>
+        <BannerNews />
+        <PostPageContainerBottom>
+          <PostBlogPage post={post} />
+          <Aside categories={categories}/>
+        </PostPageContainerBottom>
+      </PostPageContainer>
       <Footer />
     </div>
   )
@@ -68,6 +37,7 @@ export const getStaticProps = async ({ params }) => {
   const slug = params?.slug;
   const posts = await getAllPosts();
   const post = posts.find((s) => s.slug === slug) || null;
+  const categories = (await getAllCategories() || []);
 
   if(!post) {
     return {
@@ -77,6 +47,7 @@ export const getStaticProps = async ({ params }) => {
 
   return {
     props: {
+      categories,
       post,
       allPosts: posts,
     },

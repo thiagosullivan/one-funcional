@@ -38,6 +38,12 @@ export const BlogHomeContent = styled.div`
     text-transform: uppercase;
     font-family: 'Mulish', sans-serif;
     font-weight: bold;
+    transition: all 150ms ease-in-out;
+    
+    &:hover {
+      background-color: ${({theme}) => theme.primary};
+      color: ${({theme}) => theme.secondary};
+    }
   }
 `;
 

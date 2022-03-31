@@ -1,9 +1,14 @@
-import Head from 'next/head';
 import React from 'react';
-import Footer from '../components/footer';
+import Head from 'next/head';
 import Header from '../components/header';
+import BannerNews from '../components/banners/bannerNews';
+import Aside from '../components/aside';
+import BlogPage from '../components/blogPage';
+import Footer from '../components/footer';
+import { getAllCategories, getAllPosts } from '../lib/dato-cms';
+import { BlogPageContainer } from '../styles/blogPage';
 
-export default function Blog() {
+export default function Blog({ posts, categories }) {
   return (
     <div id="blog__page">
       <Head>
@@ -14,10 +19,23 @@ export default function Blog() {
 
       <Header />
       <main>
-        {/* <BannerHome />    */}
+        <BannerNews />
+        <BlogPageContainer>
+          <BlogPage postagens={posts}/>
+          <Aside categories={categories}/>
+        </BlogPageContainer>
       </main>
 
       <Footer />
     </div>
   )
+}
+
+export async function getStaticProps() {
+  const posts = (await getAllPosts()) || [];
+  const categories = (await getAllCategories() || []);
+
+  return {
+    props: { posts, categories }
+  }
 }
