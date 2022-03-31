@@ -15,7 +15,7 @@ function Aside({ categories }) {
         <ul>
           {categories.map((cate, index) => {
             return (
-              <li>
+              <li key={index}>
                 <Link href={`/categorias?s=${cate.slug}`}>
                   {cate.categoryName}
                 </Link>

@@ -24,7 +24,7 @@ function Header() {
                   src={logoHeader}
                   width={135}
                   height={75}
-                  atl="Logo One Funcional"
+                  alt="Logo One Funcional"
                 />
               </a>
             </Link>
