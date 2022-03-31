@@ -1,3 +1,4 @@
+import { darken, lighten } from "polished";
 import styled from "styled-components";
 
 export const OurPriceContainer = styled.section`
@@ -51,9 +52,10 @@ export const OurPriceCard = styled.div`
   h4 {
     color: ${({theme}) => theme.primary};
     font-family: 'Mulish', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
     margin-bottom: 2.5rem;
+    text-align: center;
   }
 
   .PriceCard__price {
@@ -90,20 +92,22 @@ export const OurPriceCard = styled.div`
   }
 
   .PriceCard__button {
-    max-width: 250px;
-    width: 100%;
+    width: 250px;
     height: 60px;
     background-color: ${({theme}) => theme.primary};
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    a {  
-      color: ${({theme}) => theme.secondary};
-      text-transform: uppercase;
-      font-size: 1.12rem;
-      font-weight: bold;
-      font-family: 'Mulish', sans-serif;
+    color: ${({theme}) => theme.secondary};
+    text-transform: uppercase;
+    font-size: 1.12rem;
+    font-weight: bold;
+    font-family: 'Mulish', sans-serif;
+    transition: all 150ms ease-in-out;
+
+    &:hover {
+      background-color: ${({theme}) => darken(0.1, theme.primary)};
+      color: ${({theme}) => theme.white};
     }
   }
 `;

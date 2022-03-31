@@ -10,7 +10,7 @@ function OurPrice() {
         <p>Pricing and packages</p>
         <OurPriceCardsContainer>
           <OurPriceCard>
-            <h4>Basica Plan</h4>
+            <h4>Aula Experimental Gratuíta</h4>
             <div className='PriceCard__price'>
               <span>$</span>
               49
@@ -22,11 +22,9 @@ function OurPrice() {
               <li><BsArrowRightShort /> Group Traning</li>
               <li><BsArrowRightShort /> Free Fitness Traning</li>
             </ul>
-            <div className='PriceCard__button'>
-              <a href="https://www.whatsapp.com" rel="noreferrer noopener" target="_blank">
-                Get Started
-              </a>
-            </div>
+            <a className='PriceCard__button' href="https://www.whatsapp.com" rel="noreferrer noopener" target="_blank">
+              Get Started
+            </a>
           </OurPriceCard>
           <OurPriceCard>
             <h4>Beginner Plan</h4>
@@ -41,11 +39,9 @@ function OurPrice() {
               <li><BsArrowRightShort /> Group Traning</li>
               <li><BsArrowRightShort /> Free Fitness Traning</li>
             </ul>
-            <div className='PriceCard__button'>
-              <a href="https://www.whatsapp.com" rel="noreferrer noopener" target="_blank">
-                Get Started
-              </a>
-            </div>
+            <a className='PriceCard__button' href="https://www.whatsapp.com" rel="noreferrer noopener" target="_blank">
+              Get Started
+            </a>
           </OurPriceCard>
           <OurPriceCard>
             <h4>Premium Plan</h4>
@@ -60,11 +56,9 @@ function OurPrice() {
               <li><BsArrowRightShort /> Group Traning</li>
               <li><BsArrowRightShort /> Free Fitness Traning</li>
             </ul>
-            <div className='PriceCard__button'>
-              <a href="https://www.whatsapp.com" rel="noreferrer noopener" target="_blank">
-                Get Started
-              </a>
-            </div>
+            <a className='PriceCard__button' href="https://www.whatsapp.com" rel="noreferrer noopener" target="_blank">
+              Get Started
+            </a>
           </OurPriceCard>
           <OurPriceCard>
             <h4>Ultimate Plan</h4>
@@ -79,11 +73,9 @@ function OurPrice() {
               <li><BsArrowRightShort /> Group Traning</li>
               <li><BsArrowRightShort /> Free Fitness Traning</li>
             </ul>
-            <div className='PriceCard__button'>
-              <a href="https://www.whatsapp.com" rel="noreferrer noopener" target="_blank">
-                Get Started
-              </a>
-            </div>
+            <a className='PriceCard__button' href="https://www.whatsapp.com" rel="noreferrer noopener" target="_blank">
+              Get Started
+            </a>
           </OurPriceCard>
         </OurPriceCardsContainer>
       </OurPriceContent>
