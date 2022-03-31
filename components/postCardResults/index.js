@@ -42,7 +42,7 @@ function PostCardResults({ postagens }) {
   return (
     <PostsContainer>
       {displayUsers}
-      {displayUsers.length >= 4 &&
+      {displayUsers.length > 4 &&
         <ReactPaginate
           previousLabel={<MdOutlineArrowBackIos />}
           nextLabel={<MdOutlineArrowForwardIos />}

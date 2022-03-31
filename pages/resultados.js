@@ -1,25 +1,27 @@
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Head from 'next/head';
-import { getAllPosts } from "../lib/dato-cms";
+import { getAllCategories, getAllPosts } from "../lib/dato-cms";
 
 import Header from '../components/header';
+import BannerHome from '../components/banners/bannerHome';
 import Footer from '../components/footer';
-
 import PostCardResults from '../components/postCardResults';
-import { ResultContainerPage } from '../styles/resultPage';
-import SearchAside from '../components/search/searchAside';
+import Aside from '../components/aside';
+
+import { ResultContainerPage, ResultPage } from '../styles/resultPage';
 
 export async function getStaticProps() {
   const posts = (await getAllPosts()) || [];
+  const categories = (await getAllCategories() || []);
 
   return {
-    props: { posts }
+    props: { posts, categories }
   }
 }
 
-function ResultsPage({ posts }){
-  // console.log(posts, 'result page')
+function ResultsPage({ posts, categories }){
+  console.log(categories, 'result page')
 
   const router = useRouter()
   const searchQuery = router.query.s
@@ -52,14 +54,15 @@ function ResultsPage({ posts }){
   // console.log(filteredPosts, "posts filtrados")
 
   return (
-    <div id="result__page">
+    <ResultPage id="result__page">
       <Head>
-        <title>Blog | One Funcional</title>
+        <title>Resultados | One Funcional</title>
         <meta name="description" content="A Funcional One vem trazer uma novo conceito em treinamento físico para pessoas que querem manter sua boa forma e buscar prevenir-se de novas lesões." />
         
       </Head>
 
       <Header />
+      <BannerHome />
       <main>
         <ResultContainerPage>
           {filteredPosts.length === 0 && (
@@ -70,11 +73,11 @@ function ResultsPage({ posts }){
           )}
           <PostCardResults postagens={filteredPosts} />
         </ResultContainerPage>
-        <SearchAside />
+        <Aside categories={categories}/>
       </main>
 
       <Footer />
-    </div>
+    </ResultPage>
   )
 }
 
