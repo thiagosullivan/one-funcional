@@ -85,7 +85,7 @@ function Testimonal({team}) {
                         width={85}
                         height={85}
                         alt='John Doe'
-                      />
+                      /> 
                       <div className='testimonial__infos__names'>
                         <p className='testimonial__name'>Guilherme Belarmino</p>
                         <span>Campeão Pan-Americano kick-boxing</span>
