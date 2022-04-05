@@ -10,8 +10,8 @@ function WhyChoseUs() {
   return (
     <WhyChoseUsContainer id="services">
       <WhyChoseUsContent>
-        <h2>Why Chose Us</h2>
-        <p>Push your limits forward</p>
+        <h2>Por que nos escolher?</h2>
+        <p>Supere os seus limites</p>
         <WhyChoseUsBottom>
           <div className='whychose__card'>
             <div className='whychose__icon'>

@@ -11,7 +11,7 @@ function Aside({ categories }) {
     <AsideContainer>
       <SearchAside />
       <CategoriesAside>
-        <p>Categories</p>
+        <p>Categorias</p>
         <ul>
           {categories.map((cate, index) => {
             return (

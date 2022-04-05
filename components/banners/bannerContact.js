@@ -7,7 +7,7 @@ function BannerContact() {
     <BannerContactContainer bgUrl="https://raw.githubusercontent.com/thiagosullivan/one-funcional/main/assets/banner-contact.webp">
       <BannerContactContent>
         <div className='bannerContact__txt'>
-          <p>Contact <span>Us</span></p>
+          <p>Fale <span>Conosco</span></p>
         </div>
       </BannerContactContent>
     </BannerContactContainer>

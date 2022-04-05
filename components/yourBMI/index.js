@@ -89,12 +89,12 @@ function YourBMI() {
   return (
     <YourBMIContainer brUrl="https://raw.githubusercontent.com/thiagosullivan/one-funcional/main/assets/your-bmi.webp">
       <YourBMIContent>
-        <h2>What is your <span>BMI</span></h2>
+        <h2>Qual é o seu <span>IMC</span> ?</h2>
         <BMICalculatorContainer>
           <div className='bmi__top'>
             <form onSubmit={handleCalc}>
               <div className='calculator__input'>
-                <span>Your height</span>
+                <span>Sua altura</span>
                 <MaskedInput
                   mask="9.99"
                   type="tel"
@@ -106,13 +106,13 @@ function YourBMI() {
                 />
               </div>
               <div className='calculator__input'>
-                <span>Your weight</span>
+                <span>Seu peso</span>
                 <input required type='number' placeholder='Ex.: 60' value={weight} onChange={({target}) => setWeight(target.value)} />
               </div>
-              <button type="submit">Compute BMI</button>
+              <button type="submit">Calcular IMC</button>
             </form>
             <div className='calculator__result'>
-              <h4>Your result:</h4>
+              <h4>Seu resultado:</h4>
               <p className='calculator__number'>{result > 0 ? result : '0.0'}</p>
               <RenderResults />
             </div>

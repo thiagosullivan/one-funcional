@@ -67,7 +67,7 @@ function ContactUs() {
     <ContactUsContainer>
       <ContactUsContent>
         <div className='contactus__colOne'>          
-          <h2>How to find us?</h2>
+          <h2>Como nos encontrar?</h2>
           <p>
             <IoMdPin />
             R. Montevidéu, 672 - Guanabara, Londrina - PR<br/>
@@ -90,44 +90,44 @@ function ContactUs() {
         </div>
         <div className='contactus__colTwo'>
           { loading ? <LoadingScreen /> : ''}
-          <h2>Send your questions</h2>
+          <h2>Envie sua mensagem</h2>
           <form onSubmit={handleSubmit}>
             <div className='contactus__inputs'>
               <input
                 type='text'
-                placeholder='Your name'
+                placeholder='Seu nome'
                 onChange={({target}) => setNome(target.value)}
                 value={nome}
               />
               <input
                 type='email'
-                placeholder='Email'
+                placeholder='Seu E-mail'
                 onChange={({target}) => setEmail(target.value)}
                 value={email}
               />
               <MaskedInput
                 mask="(99) 99999-9999"
                 type='tel'
-                placeholder='Phone'
+                placeholder='Seu telefone'
                 onChange={({target}) => setPhone(target.value)}
                 value={phone}
               />
               <input
                 type='text'
-                placeholder='Subject'
+                placeholder='Assunto'
                 onChange={({target}) => setAssunto(target.value)}
                 value={assunto}
               />
             </div>
             <textarea
-              placeholder='Your message'
+              placeholder='Sua mensagem'
               onChange={({target}) => setText(target.value)}
               value={text}
             />
             <button
               type="submit"
             >
-              Send Email
+              Enviar E-mail
             </button>
           </form>
         </div>

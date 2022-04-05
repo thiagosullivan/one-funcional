@@ -13,9 +13,9 @@ function AboutUs() {
           alt="Mulher treinando"        
         />
         <AboutUsText>
-          <span>Information about us</span>
-          <h2>The <span>One Funcional</span> workout training center</h2>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;,s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+          <span>Informações sobre nós</span>
+          <h2>A <span>One Funcional</span> é mais que uma simples academia</h2>
+          <p>Somos um Centro de Treinamento Especializado. Na One Funcional o seu treino é acompanhado por educadores físicos altamente capacitados, fisioterapeutas com especializações diversas, apoiados por equipamentos modernos e indicados pelos maiores especialistas em treinamento funcional, pilates e fisioterapia do Brasil. Além das modalidades de treino, na One Funcional você conta com atendimento médico para nutrição, fisioterapia, microfisioterapia e saúde integral.</p>
           <AboutUsList>
             <li>
               <BsArrowRightShort />

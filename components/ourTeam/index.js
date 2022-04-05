@@ -49,8 +49,8 @@ function OurTeam({team}) {
   return (
     <OurTeamContainer id="ourTeam">
       <OurTeamContent>
-        <h2>Our Team</h2>
-        <p className='ourTeam__subtitle'>Meet with trainers</p>
+        <h2>Nosso Time</h2>
+        <p className='ourTeam__subtitle'>Conheça nossos profissionais</p>
 
         <OurTeamSlider>
           <p>Sed in mauris nulla. Donec sed lorem interdum, molestie libero in, pellentesque dui. Phasellus ultricies magna at est tincidunt, quis.</p>

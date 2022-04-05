@@ -7,7 +7,7 @@ function BannerNews() {
     <BannerNewsContainer bgUrl="https://raw.githubusercontent.com/thiagosullivan/one-funcional/main/assets/banner-contact.webp">
       <BannerNewsContent>
         <div className='bannerNews__txt'>
-          <p>News and <span>Articles</span></p>
+          <p>Notícias e <span>Artigos</span></p>
         </div>
       </BannerNewsContent>
     </BannerNewsContainer>

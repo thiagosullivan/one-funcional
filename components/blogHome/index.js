@@ -9,8 +9,8 @@ function BlogHome({posts}) {
   return (
     <BlogHomeContainer>
       <BlogHomeContent>
-        <h2>News and articles</h2>
-        <p className='subtitle__section'>Our recent articles</p>
+        <h2>Notícias e artigos</h2>
+        <p className='subtitle__section'>Nossas postagens mais recentes</p>
         <PostsHomeContainer>
           {posts.slice( 0, 3 ).map( (publi, index) => {
             return (
@@ -36,7 +36,7 @@ function BlogHome({posts}) {
                     </div> 
                     <Link href={`blog/${publi.slug}`} passHref>
                       <a>
-                        Read More
+                        Leia Mais
                         <BsArrowRightShort />
                       </a>
                     </Link>
@@ -48,7 +48,7 @@ function BlogHome({posts}) {
         </PostsHomeContainer>
         <Link href="/blog">
           <a className="postcontainer__btn">
-            More Articles
+            Mais notícias
           </a>
         </Link>
       </BlogHomeContent>

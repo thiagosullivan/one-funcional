@@ -29,8 +29,8 @@ function Testimonal({team}) {
   return (
     <TestimonalContainer>
       <TestimonalContent>
-        <h2>Testimonial</h2>
-        <p className='testimonal__subtitle'>Our clients</p>
+        <h2>Depoimentos</h2>
+        <p className='testimonal__subtitle'>Nossos clientes</p>
 
         <TestimonalSlider>
           <SliderContainer

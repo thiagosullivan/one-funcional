@@ -6,8 +6,8 @@ function OurPrice() {
   return (
     <OurPriceContainer id="classes">
       <OurPriceContent>
-        <h2>Our Pricing</h2>
-        <p>Pricing and packages</p>
+        <h2>Nossos Preços</h2>
+        <p>Preços e pacotes</p>
         <OurPriceCardsContainer>
           <OurPriceCard>
             <h4>Aula Experimental Gratuíta</h4>
