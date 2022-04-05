@@ -22,9 +22,24 @@ export default function Home({ posts, team }) {
   return (
     <div id="homepage">
       <Head>
-        <title>ONE Funcional | Treinamento Funcional </title>
+        {/* Primary Meta Tags */}
+        <title>ONE Funcional | Treinamento Funcional</title>
         <meta name="description" content="A ONE Funcional vem trazer uma novo conceito em treinamento físico para pessoas que querem manter sua boa forma e buscar prevenir-se de novas lesões." />
-        
+        <meta name="title" content="ONE Funcional | Treinamento Funcional"/>
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://onefuncional.com.br"/>
+        <meta property="og:title" content="ONE Funcional | Treinamento Funcional"/>
+        <meta property="og:description" content="A ONE Funcional vem trazer uma novo conceito em treinamento físico para pessoas que querem manter sua boa forma e buscar prevenir-se de novas lesões."/>
+        <meta property="og:image" content="https://i.ibb.co/Nx6S3hP/metatab-img.jpg"/>
+
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image"/>
+        <meta property="twitter:url" content="https://onefuncional.com.br"/>
+        <meta property="twitter:title" content="ONE Funcional | Treinamento Funcional"/>
+        <meta property="twitter:description" content="A ONE Funcional vem trazer uma novo conceito em treinamento físico para pessoas que querem manter sua boa forma e buscar prevenir-se de novas lesões."/>
+        <meta property="twitter:image" content="https://i.ibb.co/Nx6S3hP/metatab-img.jpg"></meta>
       </Head>
 
       <Header />
