@@ -7,7 +7,7 @@ import { PostsBlogContainer } from './styles';
 function BlogPage({ postagens }) {
   const [pageNumber, setPageNumber] = useState(0);
 
-  const usersPerPage = 2;
+  const usersPerPage = 4;
   const pagesVisited = pageNumber * usersPerPage;
 
   const displayUsers = postagens.slice(pagesVisited, pagesVisited + usersPerPage).map((posts) => {
@@ -37,7 +37,7 @@ function BlogPage({ postagens }) {
   return (
     <PostsBlogContainer>
       {displayUsers}
-      {displayUsers.length > 1 &&
+      {displayUsers.length > 4 &&
         <ReactPaginate
           previousLabel={<MdOutlineArrowBackIos />}
           nextLabel={<MdOutlineArrowForwardIos />}
