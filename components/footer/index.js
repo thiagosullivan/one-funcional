@@ -24,7 +24,7 @@ function Footer() {
                 />
               </a>
             </Link>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua endisse ultrices greivodu lorem.</p>
+            <p>A ONE Funcional vem trazer uma novo conceito em treinamento físico para pessoas que querem manter sua boa forma e buscar prevenir-se de novas lesões.</p>
             <SocialMediaFooter>
               <FaFacebookF
                 onClick={() => handleRedirect("https://www.facebook.com/onefuncional")}
@@ -36,19 +36,19 @@ function Footer() {
                 onClick={() => handleRedirect("https://www.youtube.com")}
               />
               <FaInstagram
-                onClick={() => handleRedirect("https://www.instagram.com")}
+                onClick={() => handleRedirect("https://www.instagram.com/onefuncional")}
               />
             </SocialMediaFooter>
           </div>
           <ul className='footer_colTwo'>
             <h3>Site</h3>
             <li><Link href="/">Home</Link></li>
-            <li><Link href="/about">About Us</Link></li>
-            <li><Link href="/classes">Classes</Link></li>
-            <li><Link href="/services">Services</Link></li>
-            <li><Link href="/our-team">Our Team</Link></li>
-            <li><Link href="/pages">Pages</Link></li>
-            <li><Link href="/contact">Contact</Link></li>
+            <li><Link href="/about">Sobre Nós</Link></li>
+            <li><Link href="/services">Serviços</Link></li>
+            <li><Link href="/classes">Aulas</Link></li>
+            <li><Link href="/our-team">Nosso Time</Link></li>
+            <li><Link href="/blog">Blog</Link></li>
+            <li><Link href="/contact">Contato</Link></li>
           </ul>
           <div className='footer_colThree'>
             <h3>Contact</h3>

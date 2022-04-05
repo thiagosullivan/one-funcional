@@ -32,12 +32,12 @@ function Header() {
           <NavigationHeader>
             <ul>
               <li><Link href="/">Home</Link></li>
-              <li><Link href="/#aboutUs">About Us</Link></li>
-              <li><Link href="/#services">Services</Link></li>
-              <li><Link href="/#classes">Classes</Link></li>
-              <li><Link href="/#ourTeam">Our Team</Link></li>
+              <li><Link href="/#aboutUs">Sobre Nós</Link></li>
+              <li><Link href="/#services">Serviços</Link></li>
+              <li><Link href="/#classes">Aulas</Link></li>
+              <li><Link href="/#ourTeam">Nosso Time</Link></li>
               <li><Link href="/blog">Blog</Link></li>
-              <li><Link href="/contact">Contact</Link></li>
+              <li><Link href="/contact">Contato</Link></li>
             </ul>
           </NavigationHeader>
           <SearchSocial>
@@ -55,7 +55,7 @@ function Header() {
                 onClick={() => handleRedirect("https://www.youtube.com")}
               />
               <FaInstagram
-                onClick={() => handleRedirect("https://www.instagram.com")}
+                onClick={() => handleRedirect("https://www.instagram.com/onefuncional")}
               />
             </div>
           </SearchSocial>
