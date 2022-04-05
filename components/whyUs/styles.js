@@ -39,7 +39,7 @@ export const WhyChoseUsBottom = styled.div`
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    max-width: 220px;
+    max-width: 240px;
     width: 100%;
     color: ${({theme}) => theme.white};
     margin: 0 .5rem;
@@ -60,8 +60,8 @@ export const WhyChoseUsBottom = styled.div`
       font-family: 'Oswald', sans-serif;
       font-size: 1.5rem;
       text-align: center;
-      margin-bottom: 1.25rem;
-      min-height: 50px;
+      margin-bottom: .5rem;
+      min-height: 65px;
       line-height: 1.3;
     }
     p {
@@ -70,6 +70,7 @@ export const WhyChoseUsBottom = styled.div`
       text-align: center;
       font-weight: 400;
       text-transform: inherit;
+      min-height: 120px;
     }
   }
 `;

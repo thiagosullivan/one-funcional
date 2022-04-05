@@ -1,9 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
-import stationaryBike from '../../assets/stationary-bike.png';
-import pills from '../../assets/pills.png';
-import dumbbell from '../../assets/dumbbell.png';
-import heart from '../../assets/heart.png';
+import equipamentos from '../../assets/equipamentos.png';
+import plano from '../../assets/plano.png';
+import personal from '../../assets/personal.png';
+import atendimento from '../../assets/atendimento.png';
 import { WhyChoseUsBottom, WhyChoseUsContainer, WhyChoseUsContent } from './styles';
 
 function WhyChoseUs() {
@@ -16,50 +16,50 @@ function WhyChoseUs() {
           <div className='whychose__card'>
             <div className='whychose__icon'>
               <Image
-                src={stationaryBike}
+                src={equipamentos}
                 width={50}
                 height={50}
                 alt='Icon'
               />
             </div>
-            <h4>Modern equipment</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut dolore facilisis.</p>
+            <h4>Equipamentos Modernos</h4>
+            <p>Investir em equipamentos e profissionais capacitados é o que fazemos sempre. O nosso compromisso de entregar o melhor resultado passa por esse investimento constante.</p>
           </div>
           <div className='whychose__card'>
             <div className='whychose__icon'>
               <Image
-                src={pills}
+                src={plano}
                 width={50}
                 height={50}
                 alt='Icon'
               />
             </div>
-            <h4>Healthy nutrition plan</h4>
-            <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+            <h4>Plano Nutricional</h4>
+            <p>Para que você atinja o seu objetivo com mais saúde é imprescindível um plano alimentar personalizado. Na One Funcional, preparamos o  seu plano alimentar de acordo com o seu objetivo.</p>
           </div>
           <div className='whychose__card'>
             <div className='whychose__icon'>
               <Image
-                src={dumbbell}
+                src={personal}
                 width={50}
                 height={50}
                 alt='Icon'
               />
             </div>
-            <h4>Proffesponal training plan</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut dolore facilisis.</p>
+            <h4>Personal Trainer</h4>
+            <p>Se está buscando apoio exclusivo, aqui na One Funcional você poderá treinar em horário exclusivo com nossa equipe.</p>
           </div>
           <div className='whychose__card'>
             <div className='whychose__icon'>
               <Image
-                src={heart}
+                src={atendimento}
                 width={50}
                 height={50}
                 alt='Icon'
               />
             </div>
-            <h4>Unique to your needs</h4>
-            <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+            <h4>Atendimento Clínico</h4>
+            <p>Na One Funcional você conta com atendimento de uma equipe médica especializada em Fisioterapia, Nutrição e Saúde Integral.</p>
           </div>
         </WhyChoseUsBottom>
       </WhyChoseUsContent>
