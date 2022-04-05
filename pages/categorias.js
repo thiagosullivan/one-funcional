@@ -35,8 +35,8 @@ function ResultsPage({ posts, categories }){
   return (
     <ResultPage id="result__page">
       <Head>
-        <title>Resultados | One Funcional</title>
-        <meta name="description" content="A Funcional One vem trazer uma novo conceito em treinamento físico para pessoas que querem manter sua boa forma e buscar prevenir-se de novas lesões." />
+        <title>Categorias | ONE Funcional</title>
+        <meta name="description" content="A ONE Funcional vem trazer uma novo conceito em treinamento físico para pessoas que querem manter sua boa forma e buscar prevenir-se de novas lesões." />
         
       </Head>
 

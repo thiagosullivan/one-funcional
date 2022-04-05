@@ -12,8 +12,8 @@ export default function Blog({ posts, categories }) {
   return (
     <div id="blog__page">
       <Head>
-        <title>Blog | One Funcional</title>
-        <meta name="description" content="A Funcional One vem trazer uma novo conceito em treinamento físico para pessoas que querem manter sua boa forma e buscar prevenir-se de novas lesões." />
+        <title>Blog | ONE Funcional</title>
+        <meta name="description" content="A ONE Funcional vem trazer uma novo conceito em treinamento físico para pessoas que querem manter sua boa forma e buscar prevenir-se de novas lesões." />
         
       </Head>
 

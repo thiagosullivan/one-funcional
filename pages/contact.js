@@ -9,8 +9,8 @@ export default function Contact() {
   return (
     <div id="contact__page">
       <Head>
-        <title>Contato | One Funcional</title>
-        <meta name="description" content="A Funcional One vem trazer uma novo conceito em treinamento físico para pessoas que querem manter sua boa forma e buscar prevenir-se de novas lesões." />
+        <title>Contato | ONE Funcional</title>
+        <meta name="description" content="A ONE Funcional vem trazer uma novo conceito em treinamento físico para pessoas que querem manter sua boa forma e buscar prevenir-se de novas lesões." />
         
       </Head>
 
