@@ -90,7 +90,7 @@ function Testimonal({team}) {
                         <p className='testimonial__name'>Guilherme Belarmino</p>
                         <span>Campeão Pan-Americano kick-boxing</span>
                       </div>
-                    </div>
+                    </div> 
                   </TestimonialCard>
               </div>
               <div className='slider__testimonial'>
