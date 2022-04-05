@@ -31,7 +31,7 @@ export default function Home({ posts, team }) {
       <main>
         <BannerHome />
         <AboutUs />
-        <WhyChoseUs />
+        <WhyChoseUs /> 
         <OurPrice />
         <OurTeam team={team}/>
         <YourBMI />
