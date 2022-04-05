@@ -1,21 +1,77 @@
-import React from 'react';
+import React, {useState} from 'react';
+import toast from 'react-hot-toast';
 import MaskedInput  from 'react-input-mask';
+import { sendContactMail } from '../../services/sendMail';
+
 import { AiFillClockCircle } from 'react-icons/ai';
 import { FaPhoneAlt } from 'react-icons/fa';
 import { IoMdPin, IoMdMail } from 'react-icons/io';
+
 import { ContactUsContainer, ContactUsContent } from './styles';
+import theme from '../../styles/theme';
+import LoadingScreen from '../LoadingScreen';
 
 
 function ContactUs() {
+  const [ nome, setNome ] = useState('');
+  const [ email, setEmail ] = useState('');
+  const [ phone, setPhone ] = useState('');
+  const [ assunto, setAssunto ] = useState('');
+  const [ text, setText ] = useState('');
+  const [ loading, setLoading ] = useState(false);
+
+  console.log(nome, email, phone, assunto, text)
+
+  async function handleSubmit(event){
+    event.preventDefault();
+
+    if(!nome || !email || !phone || !assunto || !text){
+      toast('Preencha todos os campos para enviar sua mensagem!', {
+        style: {
+          background: theme.error,
+          color: theme.white
+        }
+      });
+
+      return;
+    }
+
+    try {
+      setLoading(true)
+      await sendContactMail(nome, email, phone, assunto, text);
+      setNome('');
+      setEmail('');
+      setPhone('');
+      setAssunto('');
+      setText('');
+      toast('Formulário enviado com sucesso!', {
+        style: {
+          background: theme.success,
+          color: theme.white
+        }
+      });
+    } catch {
+      toast('Ocorreu um erro ao tentar enviar sua mensagem. Tente novamente!', {
+        style: {
+          background: theme.error,
+          color: theme.white
+        }
+      });
+    } finally {
+      // router.push('/obrigado')
+      setLoading(false)
+    }
+  }
+
   return (
     <ContactUsContainer>
       <ContactUsContent>
-        <div className='contactus__colOne'>
+        <div className='contactus__colOne'>          
           <h2>How to find us?</h2>
           <p>
             <IoMdPin />
-            Avenida Higienópolis, Centro, Londrina - PR<br/>
-            86010-380
+            R. Montevidéu, 672 - Guanabara, Londrina - PR<br/>
+            86050-020
           </p>
           <p>
             <AiFillClockCircle />
@@ -28,36 +84,51 @@ function ContactUs() {
           </p>
           <p>
             <FaPhoneAlt />
-            &#40;43&#41; 99999-9999<br/>
-            &#40;43&#41; 88888-8888
+            &#40;43&#41; 3339-7334<br/>
+            &#40;43&#41; 99982-9722<br />
           </p>
         </div>
         <div className='contactus__colTwo'>
+          { loading ? <LoadingScreen /> : ''}
           <h2>Send your questions</h2>
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className='contactus__inputs'>
               <input
                 type='text'
                 placeholder='Your name'
+                onChange={({target}) => setNome(target.value)}
+                value={nome}
               />
               <input
                 type='email'
                 placeholder='Email'
+                onChange={({target}) => setEmail(target.value)}
+                value={email}
               />
               <MaskedInput
-                mask="(99)99999-9999"
+                mask="(99) 99999-9999"
                 type='tel'
                 placeholder='Phone'
+                onChange={({target}) => setPhone(target.value)}
+                value={phone}
               />
               <input
                 type='text'
                 placeholder='Subject'
+                onChange={({target}) => setAssunto(target.value)}
+                value={assunto}
               />
             </div>
             <textarea
-              placeholder='Your name'
+              placeholder='Your message'
+              onChange={({target}) => setText(target.value)}
+              value={text}
             />
-            <button>Send Email</button>
+            <button
+              type="submit"
+            >
+              Send Email
+            </button>
           </form>
         </div>
       </ContactUsContent>

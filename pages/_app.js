@@ -1,5 +1,6 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
 import theme from '../styles/theme';
+import { Toaster } from 'react-hot-toast';
 import GlobalStyles from '../styles/globals';
 import NextNProgress from 'nextjs-progressbar';
 import "slick-carousel/slick/slick.css"; 
@@ -9,6 +10,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
     <ThemeProvider theme={theme}>
+      <Toaster position="bottom-right" />
       <NextNProgress
         color={theme.primary}
         startPosition={0.3}

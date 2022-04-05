@@ -44,6 +44,7 @@ export const ContactUsContent = styled.section`
     background-color: ${({theme}) => theme.secondary};
     padding: 7.5rem 4.6rem;
     max-width: 800px;
+    position: relative;
 
     h2 {
       font-family: 'Oswald', sans-serif;
