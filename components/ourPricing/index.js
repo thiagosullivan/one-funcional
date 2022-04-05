@@ -28,10 +28,10 @@ function OurPrice() {
           </OurPriceCard>
           <OurPriceCard>
             <h4>Beginner Plan</h4>
-            <div className='PriceCard__price'>
+            {/* <div className='PriceCard__price'>
               <span>$</span>
               79
-            </div>
+            </div> */}
             <ul className='PriceCard__list'>
               <li><BsArrowRightShort /> Personal Trainer</li>
               <li><BsArrowRightShort /> Convienient Time</li>
@@ -45,10 +45,10 @@ function OurPrice() {
           </OurPriceCard>
           <OurPriceCard>
             <h4>Premium Plan</h4>
-            <div className='PriceCard__price'>
+            {/* <div className='PriceCard__price'>
               <span>$</span>
               99
-            </div>
+            </div> */}
             <ul className='PriceCard__list'>
               <li><BsArrowRightShort /> Personal Trainer</li>
               <li><BsArrowRightShort /> Convienient Time</li>
