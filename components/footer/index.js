@@ -51,12 +51,12 @@ function Footer() {
             <li><Link href="/contact">Contato</Link></li>
           </ul>
           <div className='footer_colThree'>
-            <h3>Contact</h3>
+            <h3>Contato</h3>
             <div className='colThree__infos'>
-              <p><strong>Address:</strong> R. Montevidéu, 672<br/>
+              <p><strong>Endereço:</strong> R. Montevidéu, 672<br/>
               Guanabara, Londrina - PR<br/>
               86050-020</p>
-              <p><a href="tel:+5543999829722"><strong>Phone:</strong> &#40;43&#41; 3339-7334</a><br />
+              <p><a href="tel:+5543999829722"><strong>Telefone:</strong> &#40;43&#41; 3339-7334</a><br />
               &#40;43&#41; 99982-9722</p>
               <p><a href="mailto:contato@onefuncional.com.br"><strong>E-mail:</strong> contato@onefuncional.com.br</a></p>
             </div>
