@@ -1,7 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 import Slider from "react-slick";
-import testimonialImg from '../../assets/testimonial-1.jpg';
+import testimonialTalisca from '../../assets/talisca-min.jpg';
+import testimonialGuilherme from '../../assets/guilherme.jpg';
 import { FaQuoteLeft } from 'react-icons/fa';
 import { TestimonalContainer, TestimonalContent, TestimonalSlider, SliderContainer, TestimonialCard } from './styles';
 
@@ -41,17 +42,17 @@ function Testimonal({team}) {
               <div className='slider__testimonial'>
                 <TestimonialCard>
                   <div className='testimonial_quote'><FaQuoteLeft/></div>
-                  <p className='testimonial__opinion'>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                  <p className='testimonial__opinion'>Os únicos apoios que recebo é da academia One Funcional na qual me acolheram com muito carinho para ter total suporte para a minha preparação física e fisioterapia. Obrigada Academia One Funcional pela confiança.</p>
                   <div className='testimonial__infos'>
                     <Image
-                      src={testimonialImg}
+                      src={testimonialTalisca}
                       width={85}
                       height={85}
                       alt='John Doe'
                     />
                     <div className='testimonial__infos__names'>
-                      <p className='testimonial__name'>John Doe</p>
-                      <span>Marketing manager</span>
+                      <p className='testimonial__name'>Talisca Reis</p>
+                      <span>Seleção Brasileira de taekwondo</span>
                     </div>
                   </div>
                 </TestimonialCard>
@@ -59,17 +60,35 @@ function Testimonal({team}) {
               <div className='slider__testimonial'>
                 <TestimonialCard>
                     <div className='testimonial_quote'><FaQuoteLeft/></div>
-                    <p className='testimonial__opinion'>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p className='testimonial__opinion'>Acho bem mais dinâmico e divertido. São os mesmos princípios do Pilates convencional, mas de uma forma mais animada. Dá um gás a mais nas aulas</p>
                     <div className='testimonial__infos'>
                       <Image
-                        src={testimonialImg}
+                        src={testimonialTalisca}
                         width={85}
                         height={85}
                         alt='John Doe'
                       />
                       <div className='testimonial__infos__names'>
-                        <p className='testimonial__name'>John Doe</p>
-                        <span>Marketing manager</span>
+                        <p className='testimonial__name'>Claudia Medeiros</p>
+                        <span>Aluna de Neo Pilates</span>
+                      </div>
+                    </div>
+                  </TestimonialCard>
+              </div>
+              <div className='slider__testimonial'>
+                <TestimonialCard>
+                    <div className='testimonial_quote'><FaQuoteLeft/></div>
+                    <p className='testimonial__opinion'>Em 2015 rolaram muitos treinos na melhor academia de funcional de Londrina e região.</p>
+                    <div className='testimonial__infos'>
+                      <Image
+                        src={testimonialGuilherme}
+                        width={85}
+                        height={85}
+                        alt='John Doe'
+                      />
+                      <div className='testimonial__infos__names'>
+                        <p className='testimonial__name'>Guilherme Belarmino</p>
+                        <span>Campeão Pan-Americano kick-boxing</span>
                       </div>
                     </div>
                   </TestimonialCard>
@@ -80,25 +99,7 @@ function Testimonal({team}) {
                     <p className='testimonial__opinion'>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                     <div className='testimonial__infos'>
                       <Image
-                        src={testimonialImg}
-                        width={85}
-                        height={85}
-                        alt='John Doe'
-                      />
-                      <div className='testimonial__infos__names'>
-                        <p className='testimonial__name'>John Doe</p>
-                        <span>Marketing manager</span>
-                      </div>
-                    </div>
-                  </TestimonialCard>
-              </div>
-              <div className='slider__testimonial'>
-                <TestimonialCard>
-                    <div className='testimonial_quote'><FaQuoteLeft/></div>
-                    <p className='testimonial__opinion'>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <div className='testimonial__infos'>
-                      <Image
-                        src={testimonialImg}
+                        src={testimonialTalisca}
                         width={85}
                         height={85}
                         alt='John Doe'
