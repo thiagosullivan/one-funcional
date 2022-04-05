@@ -37,7 +37,7 @@ function BlogPage({ postagens }) {
   return (
     <PostsBlogContainer>
       {displayUsers}
-      {displayUsers.length > 4 &&
+      {displayUsers.length >= 2 &&
         <ReactPaginate
           previousLabel={<MdOutlineArrowBackIos />}
           nextLabel={<MdOutlineArrowForwardIos />}

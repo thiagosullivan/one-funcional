@@ -36,6 +36,11 @@ export const PostColContent = styled.section`
       span {
         font-size: 1.25rem;
         font-family: 'Mulish', sans-serif;
+        margin-right: 5px;
+
+        &:last-child {
+          margin-right: 0px;
+        }
       }
     }
 
@@ -88,7 +93,7 @@ export const PostColContent = styled.section`
     
     blockquote {
       background-color: ${({theme}) => theme.grey};
-      padding: 3rem;
+      padding: 1rem;
       margin: 2rem 0;
 
       p {
@@ -123,4 +128,13 @@ export const AuthorPostImage = styled.div`
   background-position: center;
   border-radius: 50%;
   margin-right: .7rem;
+`
+
+export const PostColContentImage = styled.div`
+  max-width: 750px;
+  width: 100%;
+  height: 375px;
+  background-image: url(${props => props.postContentImage});
+  background-size: cover;
+  background-position: center;
 `

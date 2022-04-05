@@ -13,7 +13,7 @@ function OurPrice() {
             <h4>Aula Experimental Gratuíta</h4>
             <div className='PriceCard__price'>
               <span>$</span>
-              49
+              0
             </div>
             <ul className='PriceCard__list'>
               <li><BsArrowRightShort /> Personal Trainer</li>

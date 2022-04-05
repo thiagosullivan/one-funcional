@@ -60,11 +60,15 @@ export const PostCardHome = styled.div`
   min-height: 560px;
   margin: 1rem;
 
-  .postcard__img {
+  /* .postcard__img {
     max-width: 515px;
     width: 100%;
+    height: 100%;
     position: relative;
-  }
+    background-image: url(${props => props.postImg});
+    background-size: cover;
+    background-position: center;
+  } */
 
   .post__home__infosbottom {
     padding: 1.5rem;
@@ -79,7 +83,8 @@ export const PostCardHome = styled.div`
       font-weight: bold;
       color: ${({theme}) => theme.secondary};
       text-transform: uppercase;
-      min-height: 55px;
+      min-height: 70px;
+      line-height: 1.2;
       margin-bottom: 1rem;
     }
   
@@ -121,3 +126,13 @@ export const PostCardHome = styled.div`
   }
 
 `;
+
+export const PostCardImage = styled.div`
+  max-width: 515px;
+  width: 100%;
+  height: 280px;
+  position: relative;
+  background-image: url(${props => props.postCardImg});
+  background-size: cover;
+  background-position: center;
+`

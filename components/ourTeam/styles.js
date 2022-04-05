@@ -92,6 +92,8 @@ export const TeamCard = styled.div`
   width: 100%;
   height: 440px;
   background-image: url(${props => props.teamPhoto});
+  background-size: cover;
+  background-position: center;
   position: relative;
   overflow: hidden;
   /* filter: drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.3)); */
@@ -163,6 +165,11 @@ export const TeamCard = styled.div`
           &:hover {
             color: ${({theme}) => darken( 0.2, theme.primary)}
           }
+        }
+
+        .disable__socialmedia {
+          pointer-events: none;
+          color: ${({theme}) => darken( 0.2, theme.grey)};
         }
       }
     }

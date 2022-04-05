@@ -17,9 +17,9 @@ function OurTeam({team}) {
             <span>{team.teamRole}</span>
             <p className='degrees'>{team.degrees}</p>
             <div className='teamCard__socialmedia'>
-              <a href={team.fbLink} rel="noreferrer noopener" target="_blank"><FaFacebookF/></a>
-              <a href={team.igLink} rel="noreferrer noopener" target="_blank"><FaInstagram/></a>
-              <a href={team.twLink} rel="noreferrer noopener" target="_blank"><FaTwitter/></a>
+              <a href={team.fbLink} className={(team.fbLink == '' ? 'disable__socialmedia' : '')} rel="noreferrer noopener" target="_blank"><FaFacebookF/></a>          
+              <a href={team.igLink} className={(team.igLink == '' ? 'disable__socialmedia' : '')} rel="noreferrer noopener" target="_blank"><FaInstagram/></a>
+              <a href={team.twLink} className={(team.twLink == '' ? 'disable__socialmedia' : '')} rel="noreferrer noopener" target="_blank"><FaTwitter/></a>
             </div>
           </div>
         </div>

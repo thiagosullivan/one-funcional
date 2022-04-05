@@ -3,7 +3,7 @@ import Image from 'next/image';
 import ReactMarkdown from "react-markdown";
 import { BiCategory } from "react-icons/bi";
 
-import { AuthorPostImage, PostColContainer, PostColContent } from './styles';
+import { AuthorPostImage, PostColContainer, PostColContent, PostColContentImage } from './styles';
 
 function PostBlogPage({ post }) {
   const str = post.videoUrl
@@ -25,13 +25,16 @@ function PostBlogPage({ post }) {
   return (
     <PostColContainer>
       <PostColContent>
-        <Image
+        <PostColContentImage
+          postContentImage={post.postImg.url}
+        />
+        {/* <Image
           src={post.postImg.url}
           alt={post.title}
           layout="responsive"
           width={750}
           height={375}
-        />
+        /> */}
         <h1>{post.title}</h1>
         <div className='post__infos__top'>
           <div className='post__date'>

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { BsArrowRightShort } from 'react-icons/bs';
 
-import { BlogHomeContainer, BlogHomeContent, PostCardHome, PostsHomeContainer } from './styles';
+import { BlogHomeContainer, BlogHomeContent, PostCardHome, PostCardImage, PostsHomeContainer } from './styles';
 
 function BlogHome({posts}) {
   return (
@@ -15,7 +15,10 @@ function BlogHome({posts}) {
           {posts.slice( 0, 3 ).map( (publi, index) => {
             return (
               <PostCardHome key={index}>
-                <div className='postcard__img'>
+                <PostCardImage
+                  postCardImg={publi.postImg.url}
+                />
+                {/* <div className='postcard__img' postImg={publi.postImg.url}>
                   <Image
                     src={publi.postImg.url}
                     layout="responsive"
@@ -24,9 +27,9 @@ function BlogHome({posts}) {
                     width={415}
                     height={280}
                   />
-                </div>
+                </div> */}
                 <div className='post__home__infosbottom'>
-                  <h4>{publi.title.length > 75 ? publi.title.substr(0, 75) + "..." : publi.title}</h4>
+                  <h4>{publi.title.length > 85 ? publi.title.substr(0, 85) + "..." : publi.title}</h4>
                   <p>{publi.resume.length > 150 ? publi.resume.substr(0, 150) + "..." : publi.resume}</p>
                   <div className='postcard__bottom'>
                     <div className='postcard__date'>
