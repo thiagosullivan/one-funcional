@@ -27,7 +27,7 @@ function Footer() {
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua endisse ultrices greivodu lorem.</p>
             <SocialMediaFooter>
               <FaFacebookF
-                onClick={() => handleRedirect("https://www.facebook.com")}
+                onClick={() => handleRedirect("https://www.facebook.com/onefuncional")}
               />
               <FaTwitter
                 onClick={() => handleRedirect("https://www.twitter.com")}
@@ -56,7 +56,8 @@ function Footer() {
               <p><strong>Address:</strong> R. Montevidéu, 672<br/>
               Guanabara, Londrina - PR<br/>
               86050-020</p>
-              <p><a href="tel:+43999999999"><strong>Phone:</strong> (43) 99999-9999</a><br /></p>
+              <p><a href="tel:+5543999829722"><strong>Phone:</strong> &#40;43&#41; 3339-7334</a><br />
+              &#40;43&#41; 99982-9722</p>
               <p><a href="mailto:contato@onefuncional.com.br"><strong>E-mail:</strong> contato@onefuncional.com.br</a></p>
             </div>
           </div>

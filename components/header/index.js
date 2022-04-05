@@ -46,7 +46,7 @@ function Header() {
             </div>
             <div className='socialmedia__header'>
               <FaFacebookF
-                onClick={() => handleRedirect("https://www.facebook.com")}
+                onClick={() => handleRedirect("https://www.facebook.com/onefuncional")}
               />
               <FaTwitter
                 onClick={() => handleRedirect("https://www.twitter.com")}
