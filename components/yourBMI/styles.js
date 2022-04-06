@@ -44,6 +44,10 @@ export const YourBMIContent = styled.section`
       }
     }
   }
+
+  @media screen and (max-width: 980px){
+    padding: 5rem 1rem;
+  }
 `;
 
 export const BMICalculatorContainer = styled.section`
@@ -55,6 +59,10 @@ export const BMICalculatorContainer = styled.section`
 
   @media screen and (max-width: 980px){
     margin: 0 auto;
+  }
+
+  @media screen and (max-width: 450px){
+    padding: 2rem 1rem;
   }
 
   .bmi__top {
@@ -132,6 +140,7 @@ export const BMICalculatorContainer = styled.section`
 
     @media screen and (max-width: 660px){
       margin-bottom: 2rem;
+      margin-right: 0;
 
       .calculator__input {
         input {
@@ -140,6 +149,13 @@ export const BMICalculatorContainer = styled.section`
       }
       button {
         max-width: unset;
+        font-size: 1.2rem;
+      }
+    }
+
+    @media screen and (max-width: 500px){
+      span {
+        font-size: 1rem;
       }
     }
   }

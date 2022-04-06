@@ -14,7 +14,9 @@ function AboutUs() {
           className='imgAboutUs'
         />
         <AboutUsText>
-          <span>Informações sobre nós</span>
+          <div>
+            <span>Informações sobre nós</span>
+          </div>
           <h2>A <span>One Funcional</span> é mais que uma simples academia</h2>
           <p>Somos um Centro de Treinamento Especializado. Na One Funcional o seu treino é acompanhado por educadores físicos altamente capacitados, fisioterapeutas com especializações diversas, apoiados por equipamentos modernos e indicados pelos maiores especialistas em treinamento funcional, pilates e fisioterapia do Brasil. Além das modalidades de treino, na One Funcional você conta com atendimento médico para nutrição, fisioterapia, microfisioterapia e saúde integral.</p>
           <AboutUsList>

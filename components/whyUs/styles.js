@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const WhyChoseUsContainer = styled.section`
   background-color: ${({theme}) => theme.secondary};
   padding: 6.8rem 0;
+
+  @media screen and (max-width: 500px){
+    padding: 3rem 0;
+  }
 `;
 
 export const WhyChoseUsContent = styled.div`
@@ -29,6 +33,12 @@ export const WhyChoseUsContent = styled.div`
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 3.1rem;
+  }
+
+  @media screen and (max-width: 500px){
+    h2, p {
+      font-size: 1.7rem;
+    }
   }
 `;
 

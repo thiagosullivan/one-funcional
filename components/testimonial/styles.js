@@ -3,6 +3,10 @@ import styled from "styled-components";
 
 export const TestimonalContainer = styled.section`
   padding: 6.8rem 0;
+
+  @media screen and (max-width: 500px){
+    padding: 3rem 0;
+  }
 `;
 
 export const TestimonalContent = styled.div`
@@ -28,6 +32,15 @@ export const TestimonalContent = styled.div`
     text-align: center;
     margin-bottom: 1.5rem;
   }
+  
+  @media screen and (max-width: 500px){
+    h2, .testimonal__subtitle {
+      font-size: 1.7rem;
+    }
+    .testimonal__subtitle {
+      margin-bottom: 2.3rem;
+    }
+  }
 `;
 
 export const TestimonalSlider = styled.div`
@@ -46,6 +59,9 @@ export const SliderContainer = styled.div`
   margin: 0 auto;
   padding: 0 1rem;
 
+  @media screen and (max-width: 700px){
+    width: 100%;
+  }
   .slick-slider .slick-track {
     padding-top: 3rem;
   }

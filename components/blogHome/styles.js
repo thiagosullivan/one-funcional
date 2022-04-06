@@ -13,6 +13,10 @@ export const BlogHomeContent = styled.div`
   flex-direction: column;
   align-items: center;
 
+  @media screen and (max-width: 500px){
+    padding: 3rem 1rem;
+  }
+
   h2 {
     font-size: 2.25rem;
     font-family: 'Mulish', sans-serif;
@@ -29,6 +33,16 @@ export const BlogHomeContent = styled.div`
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 3.75rem;
+  }
+
+  @media screen and (max-width: 500px){
+    h2, .subtitle__section {
+      font-size: 1.7rem;
+    }
+    .subtitle__section {
+      margin-bottom: 2.3rem;
+      margin-top: 1rem;
+    }
   }
 
   .postcontainer__btn {
@@ -63,16 +77,6 @@ export const PostCardHome = styled.div`
   width: 100%;
   min-height: 560px;
   margin: 1rem;
-
-  /* .postcard__img {
-    max-width: 515px;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    background-image: url(${props => props.postImg});
-    background-size: cover;
-    background-position: center;
-  } */
 
   .post__home__infosbottom {
     padding: 1.5rem;

@@ -4,6 +4,10 @@ import styled from "styled-components";
 export const OurPriceContainer = styled.section`
   background-color: ${({theme}) => theme.third};
   padding: 6.8rem 1rem 6.8rem ;
+
+  @media screen and (max-width: 500px){
+    padding: 3rem 1rem;
+  }
 `;
 
 export const OurPriceContent = styled.div`
@@ -28,6 +32,15 @@ export const OurPriceContent = styled.div`
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 4.3rem;
+  }
+
+  @media screen and (max-width: 500px){
+    h2, p {
+      font-size: 1.7rem;
+    }
+    p {
+      margin-bottom: 2.3rem;
+    }
   }
 `;
 

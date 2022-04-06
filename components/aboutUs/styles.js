@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const AboutUsContainer = styled.section`
   padding: 7rem 2rem 9.3rem;
+  
+  @media screen and (max-width: 980px){
+    padding: 3rem 2rem;
+  }
 `;
 
 export const AboutUsTop = styled.div`
@@ -73,6 +77,7 @@ export const AboutUsBottom = styled.div`
   @media screen and (max-width: 720px){
     flex-direction: column;
     align-items: center;
+    margin: 2rem auto;
   }
 
   .specialization__aboutus {
@@ -116,7 +121,7 @@ export const AboutUsBottom = styled.div`
     }
     p {
       color: ${({ theme }) => theme.white};
-    }    
+    }
   }
 `;
 
@@ -162,6 +167,22 @@ export const AboutUsText = styled.div`
     max-width: unset;
     margin-left: 0;
   }
+
+  @media screen and (max-width: 500px){
+    h2, p, div:first-child {
+      text-align: center;
+    }
+    div:first-child {
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: 2rem;
+      
+      span {
+        font-size: 2rem;
+      }
+    }
+  }
 `;
 
 export const AboutUsList = styled.ul`
@@ -185,6 +206,18 @@ export const AboutUsList = styled.ul`
     color: ${({ theme }) => theme.primary};
     font-size: 1.8rem;
     margin-right: 0.93rem;
+  }
+
+  @media screen and (max-width: 500px){
+    li {
+      text-align: left;
+      align-items: flex-start;
+
+      p {
+        text-align: left;
+        font-size: 1rem;
+      }
+    }
   }
 `;
 

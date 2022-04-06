@@ -3,6 +3,10 @@ import styled from "styled-components";
 
 export const OurTeamContainer = styled.section`
   padding: 6.8rem 0;
+
+  @media screen and (max-width: 500px){
+    padding: 3rem 0;
+  }
 `;
 
 export const OurTeamContent = styled.div`
@@ -28,6 +32,15 @@ export const OurTeamContent = styled.div`
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 1.5rem;
+  }
+
+  @media screen and (max-width: 500px){
+    h2, .ourTeam__subtitle {
+      font-size: 1.7rem;
+    }
+    .ourTeam__subtitle {
+      margin-bottom: 2.3rem;
+    }
   }
 `;
 
