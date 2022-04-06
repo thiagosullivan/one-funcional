@@ -6,10 +6,10 @@ import BannerHome from '../components/banners/bannerHome';
 import BlogHome from '../components/blogHome';
 import Footer from '../components/footer';
 import Header from '../components/header';
+import HeaderMobile from '../components/headerMobile';
 import OurPrice from '../components/ourPricing';
 import OurTeam from '../components/ourTeam';
 import Testimonal from '../components/testimonial';
-// import Testimonal from '../components/testimonial';
 import WhyChoseUs from '../components/whyUs';
 import YourBMI from '../components/yourBMI';
 import { getAllPosts, getAllTeam } from '../lib/dato-cms';
@@ -43,6 +43,7 @@ export default function Home({ posts, team }) {
       </Head>
 
       <Header />
+      <HeaderMobile />
       <main>
         <BannerHome />
         <AboutUs />

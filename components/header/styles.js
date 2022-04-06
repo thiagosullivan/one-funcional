@@ -7,6 +7,11 @@ export const HeaderContainer = styled.header`
   z-index: 3;
   padding: 1rem;
   border-bottom: 1px solid ${({theme}) => theme.primary};
+  display: block;
+  
+  @media screen and (max-width: 980px) {
+    display: none;
+  }
 `;
 
 export const HeaderContent = styled.div`
@@ -38,6 +43,12 @@ export const NavigationHeader = styled.nav`
       &:hover {
         color: ${({ theme }) => theme.primary};
       }
+    }    
+  }
+
+  @media screen and (max-width: 1110px){
+    ul a {
+      padding: 0 15px;
     }
   }
 `;
