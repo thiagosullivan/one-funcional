@@ -4,6 +4,7 @@ import BannerContact from '../components/banners/bannerContact';
 import ContactUs from '../components/contact';
 import Footer from '../components/footer';
 import Header from '../components/header';
+import HeaderMobile from '../components/headerMobile';
 
 export default function Contact() {
   return (
@@ -30,6 +31,7 @@ export default function Contact() {
       </Head>
 
       <Header />
+      <HeaderMobile />
       <main>
         <BannerContact />
         <ContactUs />

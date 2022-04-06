@@ -41,4 +41,8 @@ export default createGlobalStyle`
     color: inherit;
   }
 
+  .disableScroll {
+    height: 100%;
+    overflow-y: hidden;
+  }
 `;

@@ -3,6 +3,7 @@ import Aside from '../../components/aside';
 import BannerNews from '../../components/banners/bannerNews';
 import Footer from '../../components/footer';
 import Header from '../../components/header';
+import HeaderMobile from '../../components/headerMobile';
 import PostBlogPage from '../../components/postBlogPage';
 import SearchAside from "../../components/search/searchAside";
 import { getAllCategories, getAllPosts } from "../../lib/dato-cms";
@@ -37,6 +38,7 @@ function PostPage({ post, posts, categories}){
       </Head>
 
       <Header />
+      <HeaderMobile />
       <PostPageContainer>
         <BannerNews />
         <PostPageContainerBottom>

@@ -10,6 +10,7 @@ import PostCardResults from '../components/postCardResults';
 import Aside from '../components/aside';
 
 import { ResultContainerPage, ResultPage } from '../styles/resultPage';
+import HeaderMobile from '../components/headerMobile';
 
 export async function getStaticProps() {
   const posts = (await getAllPosts()) || [];
@@ -77,6 +78,7 @@ function ResultsPage({ posts, categories }){
       </Head>
 
       <Header />
+      <HeaderMobile />
       <BannerHome />
       <main>
         <ResultContainerPage>

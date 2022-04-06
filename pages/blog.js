@@ -7,6 +7,7 @@ import BlogPage from '../components/blogPage';
 import Footer from '../components/footer';
 import { getAllCategories, getAllPosts } from '../lib/dato-cms';
 import { BlogPageContainer } from '../styles/blogPage';
+import HeaderMobile from '../components/headerMobile';
 
 export default function Blog({ posts, categories }) {
   return (
@@ -33,6 +34,7 @@ export default function Blog({ posts, categories }) {
       </Head>
 
       <Header />
+      <HeaderMobile />
       <main>
         <BannerNews />
         <BlogPageContainer>
