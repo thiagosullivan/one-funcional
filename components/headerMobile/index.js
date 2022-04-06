@@ -14,6 +14,12 @@ function HeaderMobile() {
   function handleRedirect(url) {
     window.open(url)
   }
+
+  if(mobileOpen == true) {
+    document.body.classList.add("disableScroll");
+  } else {
+    document.body.classList.remove("disableScroll");
+  }
   
   return (
     <>
@@ -39,13 +45,13 @@ function HeaderMobile() {
             <div className={(mobileOpen == true ? 'menuOpen ' : '') + `HeaderMobileNavigation`}>
               <NavigationHeader>
                 <ul>
-                  <li><Link href="/">Home</Link></li>
-                  <li><Link href="/#aboutUs">Sobre Nós</Link></li>
-                  <li><Link href="/#services">Serviços</Link></li>
-                  <li><Link href="/#classes">Aulas</Link></li>
-                  <li><Link href="/#ourTeam">Nosso Time</Link></li>
-                  <li><Link href="/blog">Blog</Link></li>
-                  <li><Link href="/contact">Contato</Link></li>
+                  <li onClick={() => setMobileOpen(!mobileOpen)}><Link href="/">Home</Link></li>
+                  <li onClick={() => setMobileOpen(!mobileOpen)}><Link href="/#aboutUs">Sobre Nós</Link></li>
+                  <li onClick={() => setMobileOpen(!mobileOpen)}><Link href="/#services">Serviços</Link></li>
+                  <li onClick={() => setMobileOpen(!mobileOpen)}><Link href="/#classes">Aulas</Link></li>
+                  <li onClick={() => setMobileOpen(!mobileOpen)}><Link href="/#ourTeam">Nosso Time</Link></li>
+                  <li onClick={() => setMobileOpen(!mobileOpen)}><Link href="/blog">Blog</Link></li>
+                  <li onClick={() => setMobileOpen(!mobileOpen)}><Link href="/contact">Contato</Link></li>
                 </ul>
               </NavigationHeader>
               <SearchSocial>
