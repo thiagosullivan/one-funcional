@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import SearchHeader from '../search/searchHeader';
@@ -15,11 +15,19 @@ function HeaderMobile() {
     window.open(url)
   }
 
-  if(mobileOpen == true) {
-    document.body.classList.add("disableScroll");
-  } else {
-    document.body.classList.remove("disableScroll");
-  }
+  // if(mobileOpen == true) {
+  //   window.document.body.classList.add("disableScroll");
+  // } else {
+  //   window.document.body.classList.remove("disableScroll");
+  // }
+
+  useEffect(()  => {
+    if(mobileOpen == true) {
+        window.document.body.classList.add("disableScroll");
+      } else {
+        window.document.body.classList.remove("disableScroll");
+      }
+  }, [mobileOpen]);
   
   return (
     <>
