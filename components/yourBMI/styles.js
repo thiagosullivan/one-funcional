@@ -3,6 +3,15 @@ import styled from "styled-components";
 export const YourBMIContainer = styled.section`
   background-image: url(${props => props.brUrl});
   max-height: 1000px;
+
+  @media screen and (max-width: 1170px){
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media screen and (max-width: 660px){
+    max-height: unset;
+  }
 `;
 
 export const YourBMIContent = styled.section`
@@ -25,6 +34,15 @@ export const YourBMIContent = styled.section`
       font-weight: bold;
       color: ${({theme}) => theme.primary};
     }
+
+    @media screen and (max-width: 980px){
+      text-align: center;
+      font-size: 3rem;
+
+      span {
+        font-size: 3rem;
+      }
+    }
   }
 `;
 
@@ -32,17 +50,25 @@ export const BMICalculatorContainer = styled.section`
   border: 1px solid ${({theme}) => theme.primary};
   background-color: ${({theme}) => theme.secondary};
   padding: 3.1rem;
-  
   max-width: 850px;
   width: 100%;
+
+  @media screen and (max-width: 980px){
+    margin: 0 auto;
+  }
 
   .bmi__top {
     display: flex;
     justify-content: space-between;
     margin-bottom: 2.5rem;
+
+    @media screen and (max-width: 660px){
+      flex-direction: column;
+    }
   }
 
   form {
+    margin-right: 2rem;
 
     .calculator__input {
       color: ${({theme}) => theme.white};
@@ -56,6 +82,7 @@ export const BMICalculatorContainer = styled.section`
 
       span {
         margin-bottom: 0.91rem;
+        letter-spacing: 4px;
       }
 
       input {
@@ -90,6 +117,30 @@ export const BMICalculatorContainer = styled.section`
       color: ${({theme}) => theme.secondary};
       font-weight: bold;
       text-transform: uppercase;
+    }
+
+    @media screen and (max-width: 775px){
+      .calculator__input {
+        input {
+          height: 50px;
+        }
+      }
+      button {
+        height: 50px;
+      }
+    }
+
+    @media screen and (max-width: 660px){
+      margin-bottom: 2rem;
+
+      .calculator__input {
+        input {
+          max-width: unset;
+        }
+      }
+      button {
+        max-width: unset;
+      }
     }
   }
 
@@ -132,6 +183,14 @@ export const BMICalculatorContainer = styled.section`
       }
     }
 
+    @media screen and (max-width: 760px){
+      max-width: 250px;
+    }
+
+    @media screen and (max-width: 660px){
+      margin: 0 auto;
+      max-width: unset;
+    }
   }
 
   .bmi__note {

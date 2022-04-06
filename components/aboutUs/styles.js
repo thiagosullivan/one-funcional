@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const AboutUsContainer = styled.section`
-  padding: 7rem 0 9.3rem;
+  padding: 7rem 2rem 9.3rem;
 `;
 
 export const AboutUsTop = styled.div`
@@ -10,6 +10,17 @@ export const AboutUsTop = styled.div`
   margin: 0 auto;
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 1170px){
+    align-items: flex-end;
+  }
+
+  @media screen and (max-width: 980px){
+    img {
+      display: none !important;
+    }
+  }
+
 `;
 
 export const AboutUsBottom = styled.div`
@@ -32,8 +43,37 @@ export const AboutUsBottom = styled.div`
     content: '';
     width: 70px;
     transform: skew(-15deg);
-    background-color: ${({ theme }) => theme.primary};    
-}
+    background-color: ${({ theme }) => theme.primary};
+
+    @media screen and (max-width: 980px){
+      left: -33px;
+    }
+
+    @media screen and (max-width: 720px){
+      height: 50px;
+      width: 70%;
+      top: unset;
+      left: 50%;
+      bottom: -20px;
+      transform: translateX(-50%) skew(-15deg);
+    }
+  }
+
+  @media screen and (max-width: 1420px){
+    width: 97%;
+    margin-left: 2rem;
+    padding-left: 1rem;
+  }
+
+  @media screen and (max-width: 980px){
+    padding: 2rem 2rem 3rem;
+    margin-top: 2rem;
+  }
+
+  @media screen and (max-width: 720px){
+    flex-direction: column;
+    align-items: center;
+  }
 
   .specialization__aboutus {
     font-weight: bold;
@@ -41,6 +81,17 @@ export const AboutUsBottom = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media screen and (max-width: 980px){
+      max-width: 150px;
+      text-align: center;
+      margin: 0 .5rem;
+    }
+
+    @media screen and (max-width: 720px){
+      margin: 1.5rem .5rem;
+      max-width: unset;
+    }
 
     .specialization__number {
       color: ${({ theme }) => theme.white};
@@ -65,14 +116,14 @@ export const AboutUsBottom = styled.div`
     }
     p {
       color: ${({ theme }) => theme.white};
-    }
+    }    
   }
 `;
 
 export const AboutUsText = styled.div`
   max-width: 550px;
   width: 100%;
-  margin-left: 4.3rem;  
+  margin-left: 4.3rem;
 
   span {
     font-size: 1.25rem;
@@ -101,6 +152,15 @@ export const AboutUsText = styled.div`
     color: ${({ theme }) => theme.secondary};
     text-align: justify;
     line-height: 1.3;
+  }
+
+  @media screen and (max-width: 1170px){
+    margin-bottom: 2rem;
+  }
+
+  @media screen and (max-width: 980px){
+    max-width: unset;
+    margin-left: 0;
   }
 `;
 

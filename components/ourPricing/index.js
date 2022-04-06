@@ -11,10 +11,10 @@ function OurPrice() {
         <OurPriceCardsContainer>
           <OurPriceCard>
             <h4>Aula Experimental Gratuíta</h4>
-            <div className='PriceCard__price'>
+            {/* <div className='PriceCard__price'>
               <span>$</span>
               0
-            </div>
+            </div> */}
             <ul className='PriceCard__list'>
               <li><BsArrowRightShort /> Personal Trainer</li>
               <li><BsArrowRightShort /> Convienient Time</li>
@@ -62,10 +62,10 @@ function OurPrice() {
           </OurPriceCard>
           <OurPriceCard>
             <h4>Ultimate Plan</h4>
-            <div className='PriceCard__price'>
+            {/* <div className='PriceCard__price'>
               <span>$</span>
               149
-            </div>
+            </div> */}
             <ul className='PriceCard__list'>
               <li><BsArrowRightShort /> Personal Trainer</li>
               <li><BsArrowRightShort /> Convienient Time</li>

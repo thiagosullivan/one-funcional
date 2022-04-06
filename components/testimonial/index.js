@@ -13,15 +13,36 @@ function Testimonal({team}) {
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
+    className: "center",
+    centerMode: true,
+    centerPadding: "0px",
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 100,
+        settings: {
+          dots: true,
+        }
+      },
+      {
+        breakpoint: 980,
         settings: {
           slidesToShow: 2,
+          slidesToScroll: 2,
+        }
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 1,
           slidesToScroll: 1,
-          infinite: true,
-          dots: true
+          dots: false,
+          className: "center",
+          centerMode: true,
+          autoplay: true,
+          speed: 1000,
+          autoplaySpeed: 5000,
+          cssEase: "linear"
         }
       }
     ]
@@ -52,7 +73,7 @@ function Testimonal({team}) {
                     />
                     <div className='testimonial__infos__names'>
                       <p className='testimonial__name'>Talisca Reis</p>
-                      <span>Seleção Brasileira de taekwondo</span>
+                      <p>Seleção Brasileira de taekwondo</p>
                     </div>
                   </div>
                 </TestimonialCard>
@@ -70,7 +91,7 @@ function Testimonal({team}) {
                       />
                       <div className='testimonial__infos__names'>
                         <p className='testimonial__name'>Claudia Medeiros</p>
-                        <span>Aluna de Neo Pilates</span>
+                        <p>Aluna de Neo Pilates</p>
                       </div>
                     </div>
                   </TestimonialCard>
@@ -88,7 +109,7 @@ function Testimonal({team}) {
                       /> 
                       <div className='testimonial__infos__names'>
                         <p className='testimonial__name'>Guilherme Belarmino</p>
-                        <span>Campeão Pan-Americano kick-boxing</span>
+                        <p>Campeão Pan-Americano kick-boxing</p>
                       </div>
                     </div> 
                   </TestimonialCard>
@@ -106,7 +127,7 @@ function Testimonal({team}) {
                       />
                       <div className='testimonial__infos__names'>
                         <p className='testimonial__name'>John Doe</p>
-                        <span>Marketing manager</span>
+                        <p>Marketing manager</p>
                       </div>
                     </div>
                   </TestimonialCard>

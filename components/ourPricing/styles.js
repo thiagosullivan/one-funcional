@@ -35,6 +35,14 @@ export const OurPriceCardsContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+
+  @media screen and (max-width: 1300px){
+    padding: 0 1rem;
+  }
+
+  @media screen and (max-width: 980px){
+    flex-wrap: wrap;
+  }
 `;
 
 export const OurPriceCard = styled.div`
@@ -48,14 +56,35 @@ export const OurPriceCard = styled.div`
   max-width: 370px;
   width: 100%;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+  margin: 1rem .5rem;
+
+  @media screen and (max-width: 1600px){
+    max-width: 300px;
+    padding: 2.5rem 1.75rem;
+  }
+
+  @media screen and (max-width: 1300px){
+    max-width: 280px;
+    padding: 2.5rem 1.75rem;    
+  }
+
+  @media screen and (max-width: 1225px){
+    max-width: 270px;
+    padding: 2.5rem 1rem;    
+  }
 
   h4 {
     color: ${({theme}) => theme.primary};
     font-family: 'Mulish', sans-serif;
     font-size: 1.2rem;
     text-transform: uppercase;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
     text-align: center;
+    min-height: 50px;
+
+    @media screen and (max-width: 1100px){
+      font-size: 1rem;
+    }
   }
 
   .PriceCard__price {
@@ -108,6 +137,10 @@ export const OurPriceCard = styled.div`
     &:hover {
       background-color: ${({theme}) => darken(0.1, theme.primary)};
       color: ${({theme}) => theme.white};
+    }
+
+    @media screen and (max-width: 1225px) {
+      width: 200px;
     }
   }
 `;

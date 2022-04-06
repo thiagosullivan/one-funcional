@@ -9,6 +9,7 @@ export const OurTeamContent = styled.div`
   max-width: 1300px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 1rem;
 
   h2 {
     color: ${({theme}) => theme.primary};
@@ -42,9 +43,30 @@ export const OurTeamSlider = styled.div`
 `;
 
 export const SliderContainer = styled.div`
+  padding: 0 3rem;
+
+  @media screen and (max-width: 1300px) {
+     button.slick-next {
+      right: -5px !important;
+    }
+  }
+
+  @media screen and (max-width: 1300px) {
+     padding-right: 2rem;
+  }
+
+  @media screen and (max-width: 980px) {
+     max-width: 800px;
+     margin: 0 auto;
+  }
+
+  @media screen and (max-width: 700px) {
+     max-width: 400px;
+     margin: 0 auto;
+  }
 
   .slick-prev {
-    left: -35px !important;
+    left: -45px !important;
     
     &:before {
       display: block;
@@ -57,7 +79,7 @@ export const SliderContainer = styled.div`
     }
   }
   .slick-next {
-    right: -35px !important;
+    right: 25px !important;
 
     &:before {
       display: block;
@@ -96,12 +118,17 @@ export const TeamCard = styled.div`
   background-position: center;
   position: relative;
   overflow: hidden;
+  margin: 0 .5rem;
   /* filter: drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.3)); */
 
   &:hover > {
     .teamCard__infos {
       transform: skew(0deg, -10deg) translateY(-75px);
     }
+  }
+
+  @media screen and (max-width: 1220px){
+    max-width: 300px;
   }
 
   .teamCard__infos {

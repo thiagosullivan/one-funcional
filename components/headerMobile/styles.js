@@ -5,7 +5,7 @@ export const HeaderMobileContainer = styled.header`
   position: fixed;
   width: 100%;
   z-index: 3;
-  padding: 1rem;
+  padding: .5rem 1rem;
   border-bottom: 1px solid ${({theme}) => theme.primary};
   display: none;
 

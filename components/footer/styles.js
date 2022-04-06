@@ -79,6 +79,30 @@ export const FooterContent = styled.div`
       }
     }
   }
+
+  @media screen and (max-width: 850px){
+    flex-direction: column;
+    align-items: center;
+    
+    .footer_colOne,
+    .footer_colTwo {
+      margin-bottom: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .footer_colTwo {
+      border-bottom: 1px solid rgba(250, 250, 250, .2);
+      padding-bottom: 1rem;
+      max-width: 310px;
+      width: 100%;
+    }
+    .footer_colThree {
+      h3 {
+        text-align: center;
+      }
+    }
+  }
 `;
 
 export const SocialMediaFooter = styled.div`
@@ -106,5 +130,12 @@ export const SocialMediaFooter = styled.div`
     &:hover {
       color: ${({theme}) => darken(0.5, theme.white)};
     }
+  }
+
+  @media screen and (max-width: 850px){
+    justify-content: center;
+    border-bottom: 1px solid rgba(250, 250, 250, .2);
+    border-top: 1px solid rgba(250, 250, 250, .2);
+    padding: 1rem 0;
   }
 `;

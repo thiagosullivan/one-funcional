@@ -42,6 +42,10 @@ export const TestimonalSlider = styled.div`
 `;
 
 export const SliderContainer = styled.div`
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 1rem;
+
   .slick-slider .slick-track {
     padding-top: 3rem;
   }
@@ -91,6 +95,13 @@ export const SliderContainer = styled.div`
   .slider__testimonial {
     margin-right: 20px;
   }
+
+  @media screen and (max-width: 700px){
+    .slick-prev,
+    .slick-next {
+      display: none !important;
+    }
+  }
 `;
 
 export const TestimonialCard = styled.div`
@@ -110,7 +121,7 @@ export const TestimonialCard = styled.div`
     padding-top: 1rem;
     margin-bottom: .5rem;
     font-size: 0.91rem;
-    min-height: 120px;
+    min-height: 150px;
     height: 100%;
   }
 
@@ -144,13 +155,37 @@ export const TestimonialCard = styled.div`
         font-weight: bold;
         min-height: unset !important;
         text-align: left;
+
+        @media screen and (max-width: 1250px){
+          min-height: 44px !important;
+        }
+
+        @media screen and (max-width: 980px){
+          min-height: unset !important;
+        }
+
+        @media screen and (max-width: 800px){
+          min-height: 44px !important;
+        }
+
+        @media screen and (max-width: 700px){
+          min-height: unset !important;
+        }
       }
 
-      span {
+      p:last-child {
+        color: ${({theme}) => theme.white};
+        text-align: left;
         text-transform: uppercase;
         font-weight: 400;
         font-size: 0.86rem;
         font-family: 'Mulish', sans-serif;
+        min-height: 35px;
+        margin-bottom: 0;
+
+        @media screen and (max-width: 1080px){
+          min-height: 51px;
+        }
       }
     }
     

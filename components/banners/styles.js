@@ -25,6 +25,8 @@ export const BannerHomeContent = styled.div`
     color: ${({ theme }) => theme.white};
     text-transform: uppercase;
     text-shadow: 5px 3px 5px rgb(0,0,0,.5);
+    padding-right: 2rem;
+
 
     a { 
       background-color: ${({ theme }) => theme.primary};
@@ -42,6 +44,7 @@ export const BannerHomeContent = styled.div`
     font-family: 'Mulish', sans-serif;
     font-size: 1.12rem;
   }
+
   h1 {
     font-family: 'Oswald', sans-serif;
     font-size: 5rem;
@@ -49,6 +52,16 @@ export const BannerHomeContent = styled.div`
     span {
       font-family: 'Oswald', sans-serif;
       color: ${({ theme }) => theme.primary};
+    }
+  }
+
+  @media screen and (max-width: 980px) {
+    justify-content: center;
+
+    .bannerhome__txt {
+      text-align: center;
+      padding: 0 2rem;
+      align-items: center;
     }
   }
 `

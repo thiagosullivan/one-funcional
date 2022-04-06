@@ -52,6 +52,10 @@ export const PostsHomeContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-bottom: 3rem;
+
+  @media screen and (max-width: 980px){
+    flex-direction: column;
+  }
 `;
 
 export const PostCardHome = styled.div`

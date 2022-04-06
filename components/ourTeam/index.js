@@ -28,19 +28,34 @@ function OurTeam({team}) {
   })
 
   const settings = {
-    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
+    className: "center",
+    centerMode: true,
+    centerPadding: "0px",
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 100,
+        settings: {
+          dots: true,
+        }
+      },
+      {
+        breakpoint: 980,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true
+          slidesToScroll: 2,
+        }
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,  
+          className: "center",
+          centerMode: true,
         }
       }
     ]

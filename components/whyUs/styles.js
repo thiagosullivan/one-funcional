@@ -8,7 +8,8 @@ export const WhyChoseUsContainer = styled.section`
 export const WhyChoseUsContent = styled.div`
   max-width: 1300px;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto;  
+  padding: 0 1rem;
 
   h2 {
     font-size: 2.25rem;
@@ -30,9 +31,23 @@ export const WhyChoseUsContent = styled.div`
     margin-bottom: 3.1rem;
   }
 `;
+
 export const WhyChoseUsBottom = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width: 980px) {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 570px) {
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
 
   .whychose__card {
     display: flex;
@@ -44,6 +59,13 @@ export const WhyChoseUsBottom = styled.div`
     color: ${({theme}) => theme.white};
     margin: 0 .5rem;
     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.4));
+
+    @media screen and (max-width: 540px) {
+      h4 {
+        min-height: unset !important;
+        margin-bottom: 1.3rem !important;
+      }
+    }
 
     .whychose__icon {
       background-color: ${({theme}) => theme.primary};
@@ -71,6 +93,10 @@ export const WhyChoseUsBottom = styled.div`
       font-weight: 400;
       text-transform: inherit;
       min-height: 120px;
+    }
+
+    @media screen and (max-width: 980px) {
+      margin: 0 .8rem;
     }
   }
 `;
