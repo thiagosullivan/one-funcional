@@ -1,10 +1,11 @@
 import Head from 'next/head';
 import React from 'react';
+import Header from '../components/header';
+import HeaderMobile from '../components/headerMobile';
 import BannerContact from '../components/banners/bannerContact';
 import ContactUs from '../components/contact';
 import Footer from '../components/footer';
-import Header from '../components/header';
-import HeaderMobile from '../components/headerMobile';
+import { BannerContactContainer } from '../styles/contactPage';
 
 export default function Contact() {
   return (
@@ -32,10 +33,10 @@ export default function Contact() {
 
       <Header />
       <HeaderMobile />
-      <main>
+      <BannerContactContainer>
         <BannerContact />
         <ContactUs />
-      </main>
+      </BannerContactContainer>
 
       <Footer />
     </div>

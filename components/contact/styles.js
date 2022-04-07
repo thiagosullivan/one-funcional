@@ -2,8 +2,14 @@ import { darken } from "polished";
 import styled from "styled-components";
 
 export const ContactUsContainer = styled.section`
+  padding: 0 0 0 1rem;
+
   iframe {
     margin-bottom: -4px;
+  }
+
+  @media screen and (max-width: 980px){
+    padding: 0;
   }
 `
 export const ContactUsContent = styled.section`
@@ -13,7 +19,15 @@ export const ContactUsContent = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1rem;
+  padding: 0 0 0 1rem;
+
+  @media screen and (max-width: 980px){
+    margin-bottom: 2rem;
+  }
+
+  @media screen and (max-width: 980px){
+    padding: 0;
+  }
 
   .contactus__colOne {
     margin-right: 1rem;
@@ -23,6 +37,7 @@ export const ContactUsContent = styled.section`
       font-family: 'Oswald', sans-serif;
       color: ${({theme}) => theme.secondary};
       margin-bottom: 1.5rem;
+      line-height: 1;
     }
 
     p {
@@ -44,6 +59,7 @@ export const ContactUsContent = styled.section`
     background-color: ${({theme}) => theme.secondary};
     padding: 7.5rem 4.6rem;
     max-width: 800px;
+    width: 100%;
     position: relative;
 
     h2 {
@@ -119,6 +135,66 @@ export const ContactUsContent = styled.section`
           background-color: ${({theme}) => theme.secondary};
           color: ${({theme}) => theme.primary};
         }
+      }
+    }
+
+    @media screen and (max-width: 1300px){
+      max-width: 700px;
+      h2 {
+        font-size: 3rem;
+      }
+    }
+    @media screen and (max-width: 1200px){
+      max-width: 600px;
+      padding: 2rem;      
+    }
+    @media screen and (max-width: 980px){
+      max-width: unset;
+      h2 {
+        font-size: 1.6rem;
+      }
+      form {
+        max-width: unset;
+
+        input, text {
+          font-size: 1.3rem;
+
+          &::placeholder {
+            font-size: 1.3rem;
+          }
+        }
+
+        button {
+          width: 100%;
+        }
+      }
+    }
+    @media screen and (max-width: 980px){
+      form {
+        .contactus__inputs{
+          flex-direction: column;
+          
+          input {
+            width: 100%;
+          }
+        }        
+      }
+    }
+    @media screen and (max-width: 980px){
+      padding: 2rem 1rem;
+    }
+  }
+
+  @media screen and (max-width: 980px){
+    flex-direction: column;
+
+    .contactus__colOne {
+      margin: 2rem 0;
+      padding: 0 1rem;
+
+      h2 {
+        font-size: 2rem;
+        text-align: center;
       }
     }
   }
