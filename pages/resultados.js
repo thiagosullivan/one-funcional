@@ -4,10 +4,10 @@ import Head from 'next/head';
 import { getAllCategories, getAllPosts } from "../lib/dato-cms";
 
 import Header from '../components/header';
-import BannerHome from '../components/banners/bannerHome';
-import Footer from '../components/footer';
+import BannerResult from '../components/banners/bannerResult';
 import PostCardResults from '../components/postCardResults';
 import Aside from '../components/aside';
+import Footer from '../components/footer';
 
 import { ResultContainerPage, ResultPage } from '../styles/resultPage';
 import HeaderMobile from '../components/headerMobile';
@@ -79,7 +79,7 @@ function ResultsPage({ posts, categories }){
 
       <Header />
       <HeaderMobile />
-      <BannerHome />
+      <BannerResult />
       <main>
         <ResultContainerPage>
           {filteredPosts.length === 0 && (

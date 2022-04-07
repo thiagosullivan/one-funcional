@@ -71,18 +71,19 @@ export const BannerContactContainer = styled.div`
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
 `
 
 export const BannerContactContent = styled.div`
   .bannerContact__txt {
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
-    font-weight: bold;    
+    font-weight: bold;
+    background-color: rgba(0,0,0,.5);
 
     p {
       color: ${({ theme }) => theme.white};
@@ -114,6 +115,78 @@ export const BannerNewsContent = styled.div`
     align-items: center;
     text-transform: uppercase;
     font-weight: bold;    
+
+    p {
+      color: ${({ theme }) => theme.white};
+      font-size: 5rem;
+      font-family: 'Oswald', sans-serif;
+
+      span {
+        color: ${({ theme }) => theme.primary};
+        font-family: 'Oswald', sans-serif;
+      }
+    }
+  }
+`
+
+export const BannerResultContainer = styled.div`
+  background-image: url(${props => props.bgUrl});
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  /* height: 100vh; */
+`
+export const BannerResultContent = styled.div`
+  .bannerResult__txt {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: rgba(0,0,0,.5);
+
+    p {
+      color: ${({ theme }) => theme.white};
+      font-size: 5rem;
+      font-family: 'Oswald', sans-serif;
+
+      span {
+        color: ${({ theme }) => theme.primary};
+        font-family: 'Oswald', sans-serif;
+      }
+    }
+  }
+
+  @media screen and (max-width: 840px){
+    .bannerResult__txt {
+      height: 40vh;
+      p {
+        font-size: 3rem;
+        margin-top: 2rem;
+      }
+    }
+  }
+`
+
+export const BannerCategoriesContainer = styled.div`
+  background-image: url(${props => props.bgUrl});
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  /* height: 100vh; */
+`
+export const BannerCategoriesContent = styled.div`
+  .bannerCategories__txt {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: rgba(0,0,0,.5);
 
     p {
       color: ${({ theme }) => theme.white};

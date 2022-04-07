@@ -3,6 +3,19 @@ import styled from "styled-components";
 export const AsideContainer = styled.aside`
   max-width: 485px;
   width: 100%;
+
+  @media screen and (max-width: 1150px){
+    max-width: 400px;
+  }
+
+  @media screen and (max-width: 980px){
+    max-width: 300px;
+  }
+
+  @media screen and (max-width: 840px){
+    max-width: 750px;
+    margin: 0 auto 3rem;
+  }
 `;
 
 export const CategoriesAside = styled.div`
@@ -36,5 +49,36 @@ export const CategoriesAside = styled.div`
 
   a {
     color: ${({theme}) => theme.greysecond};
+  }
+
+  @media screen and (max-width: 980px){
+    padding: 1rem 1.5rem;
+  }
+
+  @media screen and (max-width: 840px){
+    p {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap; 
+
+      li {
+        margin: 0 10px 1rem;
+        padding: 0;
+        border-bottom: none;
+        border-right: 1px solid ${({theme}) => theme.greysecond};
+        padding-right: 10px;
+
+        &:last-child {
+          margin-bottom: 0;
+          padding-right: 0;
+          border-right: none;
+        }
+      }
+    }
   }
 `;

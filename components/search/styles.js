@@ -5,6 +5,14 @@ export const SearchAsideContainer = styled.div`
   padding: 2.25rem;
   margin-bottom: 3.1rem;
   box-shadow: 0px 10px 10px rgba(211, 211, 211, 0.7);
+
+  @media screen and (max-width: 980px){
+    padding: 1rem 1.5rem;
+  }
+
+  @media screen and (max-width: 840px){
+    margin-bottom: 1rem;
+  }
 `;
 
 export const SearchAsideContent = styled.form`
@@ -56,6 +64,26 @@ export const SearchAsideContent = styled.form`
     font-family: 'Mulish', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
+  }
+
+  @media screen and (max-width: 980px){
+    .aside__input__container{
+      input {
+        height: 40px;
+        &::placeholder {
+          font-size: 1rem;
+        }
+      }
+      svg {
+        font-size: 16px;
+        top: 12px;
+      }
+    }
+
+    button {
+      height: 40px;
+      font-size: 1rem;
+    }
   }
 `;
 

@@ -157,7 +157,9 @@ export const PostBlogIndividualContainer = styled.div`
         align-items: center;
       }
     }
+    
   }
+
 `
 
 export const ImgPost = styled.div`

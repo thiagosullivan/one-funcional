@@ -70,6 +70,10 @@ export const PostsContainer = styled.div`
         pointer-events: none;
       }
   }
+
+  @media screen and (max-width: 490px){
+    max-width: 490px;
+  }
 `;
 
 export const PostIndividualContainer = styled.div`
@@ -107,6 +111,22 @@ export const PostIndividualContainer = styled.div`
           text-transform: capitalize;
         }
       }
+
+      @media screen and (max-width: 490px){
+        width: 60px;
+        height: 60px;
+        top: -35px;
+        left: 30px;
+
+        span {
+          font-size: 1.2rem;
+
+          &:last-child {
+            font-size: 1.2rem;
+            margin-bottom: 0;
+          }
+        }
+      } 
     }
 
     h3 {
@@ -122,6 +142,10 @@ export const PostIndividualContainer = styled.div`
       color: ${({theme}) => theme.secondary};
       font-family: 'Mulish', sans-serif;
       margin-bottom: 2.5rem;
+
+      @media screen and (max-width: 490px){
+        text-align: justify;
+      }
     }
 
     .postcard__infos__bottom {
@@ -155,9 +179,22 @@ export const PostIndividualContainer = styled.div`
         display: flex;
         align-items: center;
       }
+
+      @media screen and (max-width: 490px){
+        flex-direction: column;
+        align-items: flex-start;
+
+        .postcard__categories {
+          margin-bottom: 1rem;
+          flex-wrap: wrap;
+        }
+      } 
     }
   }
 
+  @media screen and (max-width: 840px){
+    margin-bottom: 3rem;
+  }
 `;
 
 export const ImgPost = styled.div`
@@ -167,6 +204,11 @@ export const ImgPost = styled.div`
   width: 100%;
   max-width: 750px;
   height: 375px;
+
+  @media screen and (max-width: 490px){
+    max-width: 490px;
+    height: 200px;
+  }
 `;
 
 export const AuthorPostImg = styled.div`

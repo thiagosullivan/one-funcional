@@ -4,13 +4,13 @@ import Head from 'next/head';
 import { getAllCategories, getAllPosts } from "../lib/dato-cms";
 
 import Header from '../components/header';
-import BannerContact from '../components/banners/bannerContact';
-import Footer from '../components/footer';
+import HeaderMobile from '../components/headerMobile';
+import BannerCategories from '../components/banners/bannerCategories';
 import PostCardResults from '../components/postCardResults';
 import Aside from '../components/aside';
+import Footer from '../components/footer';
 
 import { ResultContainerPage, ResultPage } from '../styles/resultPage';
-import HeaderMobile from '../components/headerMobile';
 
 export async function getStaticProps() {
   const posts = (await getAllPosts()) || [];
@@ -58,7 +58,7 @@ function ResultsPage({ posts, categories }){
 
       <Header />
       <HeaderMobile />
-      <BannerContact />
+      <BannerCategories categories={categories} />
       <main>
         <ResultContainerPage>
           {filteredPosts.length === 0 && (
