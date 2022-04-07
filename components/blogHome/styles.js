@@ -14,7 +14,7 @@ export const BlogHomeContent = styled.div`
   align-items: center;
 
   @media screen and (max-width: 500px){
-    padding: 3rem 1rem;
+    padding: 3rem 1rem;]
   }
 
   h2 {
@@ -129,6 +129,12 @@ export const PostCardHome = styled.div`
           font-size: 1.5rem;
           font-weight: bold;
         }
+      }
+    }
+
+    @media screen and (max-width: 980px){
+      h4 {
+        min-height: unset;
       }
     }
   }

@@ -6,7 +6,7 @@ import { MdOutlineArrowForwardIos, MdOutlineArrowBackIos } from 'react-icons/md'
 
 function PostCardResults({ postagens }) {
 
-  console.log(postagens, "card resultados")
+  // console.log(postagens, "card resultados")
 
   // const reversedPosts = postagens.map(postagem => postagem).reverse();
   

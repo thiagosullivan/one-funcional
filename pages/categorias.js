@@ -22,16 +22,16 @@ export async function getStaticProps() {
 }
 
 function ResultsPage({ posts, categories }){
-  console.log(posts, 'POSTS result page')
+  // console.log(posts, 'POSTS result page')
 
   const router = useRouter()
   const searchQuery = router.query.s
-  console.log(searchQuery, 'QUERY') 
+  // console.log(searchQuery, 'QUERY')
 
   const itensFiltrados = posts.filter(({ categories }) => categories.some(({ slug }) => slug.includes(searchQuery)));
   
   let filteredPosts = itensFiltrados  
-  console.log(filteredPosts, 'FUNCTION OUT')
+  // console.log(filteredPosts, 'FUNCTION OUT')
 
   return (
     <ResultPage id="result__page">

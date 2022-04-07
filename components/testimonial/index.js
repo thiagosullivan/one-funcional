@@ -16,7 +16,7 @@ function Testimonal({team}) {
     slidesToScroll: 1,
     className: "center",
     centerMode: true,
-    centerPadding: "0px",
+    centerPadding: "60px",
     responsive: [
       {
         breakpoint: 100,

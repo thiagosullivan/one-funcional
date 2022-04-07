@@ -11,8 +11,8 @@ import { PostPageContainer, PostPageContainerBottom } from '../../styles/postPag
 
 function PostPage({ post, posts, categories}){
 
-  console.log(post, 'post')
-  console.log(posts, 'posts')
+  // console.log(post, 'post')
+  // console.log(posts, 'posts')
 
   return (
     <div id="post__page">

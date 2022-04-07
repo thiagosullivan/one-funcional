@@ -20,7 +20,7 @@ function ContactUs() {
   const [ text, setText ] = useState('');
   const [ loading, setLoading ] = useState(false);
 
-  console.log(nome, email, phone, assunto, text)
+  // console.log(nome, email, phone, assunto, text)
 
   async function handleSubmit(event){
     event.preventDefault();

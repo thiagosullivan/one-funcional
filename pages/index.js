@@ -16,8 +16,8 @@ import { getAllPosts, getAllTeam } from '../lib/dato-cms';
 
 export default function Home({ posts, team }) {
 
-  console.log(posts)
-  console.log(team, 'team')
+  // console.log(posts)
+  // console.log(team, 'team')
 
   return (
     <div id="homepage">

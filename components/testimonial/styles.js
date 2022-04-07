@@ -128,7 +128,7 @@ export const TestimonialCard = styled.div`
   position: relative;
   overflow: unset;
   border-radius: 5px;
-  box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.15); */
   margin-right: 20px;
 
   .testimonial__opinion {

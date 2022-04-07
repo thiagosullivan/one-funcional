@@ -22,7 +22,7 @@ export async function getStaticProps() {
 }
 
 function ResultsPage({ posts, categories }){
-  console.log(categories, 'result page')
+  // console.log(categories, 'result page')
 
   const router = useRouter()
   const searchQuery = router.query.s

@@ -10,7 +10,8 @@ function HeaderMobile() {
   const [ searchOpen, setSearchOpen] = useState(null)
   const [ mobileOpen, setMobileOpen] = useState(false)
 
-  console.log(mobileOpen)
+  // console.log(mobileOpen)
+  
   function handleRedirect(url) {
     window.open(url)
   }
