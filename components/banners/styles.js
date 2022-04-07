@@ -96,6 +96,17 @@ export const BannerContactContent = styled.div`
       }
     }
   }
+
+  @media screen and (max-width: 840px){
+    .bannerContact__txt  {
+      height: 40vh;
+
+      p {
+        font-size: 3rem;
+        margin-top: 2rem;
+      }
+    }
+  }
 `
 
 export const BannerNewsContainer = styled.div`
@@ -104,6 +115,10 @@ export const BannerNewsContainer = styled.div`
   background-position: center;
   width: 100%;
   height: 100vh;
+
+  @media screen and (max-width: 840px){
+    height: 40vh;
+  }
 `
 
 export const BannerNewsContent = styled.div`
@@ -124,6 +139,17 @@ export const BannerNewsContent = styled.div`
       span {
         color: ${({ theme }) => theme.primary};
         font-family: 'Oswald', sans-serif;
+      }
+    }
+  }
+
+  @media screen and (max-width: 840px){
+    .bannerNews__txt  {
+      height: 40vh;
+
+      p {
+        font-size: 3rem;
+        margin-top: 2rem;
       }
     }
   }
@@ -196,6 +222,15 @@ export const BannerCategoriesContent = styled.div`
       span {
         color: ${({ theme }) => theme.primary};
         font-family: 'Oswald', sans-serif;
+      }
+    }
+  }
+  @media screen and (max-width: 840px){
+    .bannerCategories__txt {
+      height: 40vh;
+      p {
+        font-size: 3rem;
+        margin-top: 2rem;
       }
     }
   }

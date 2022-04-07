@@ -98,7 +98,7 @@ export const FooterContent = styled.div`
       width: 100%;
     }
     .footer_colThree {
-      h3 {
+      h3, p {
         text-align: center;
       }
     }
