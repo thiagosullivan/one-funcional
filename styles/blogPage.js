@@ -7,4 +7,10 @@ export const BlogPageContainer = styled.section`
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  padding: 0 1rem;
+  
+  @media screen and (max-width: 840px){
+    flex-direction: column-reverse;
+    margin: 3rem auto;
+  }
 `

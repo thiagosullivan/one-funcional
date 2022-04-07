@@ -6,7 +6,12 @@ export const PostsBlogContainer = styled.div`
   max-width: 750px;
   width: 100%;
   margin-bottom: 6.25rem;
-  
+  margin-right: 2rem;
+
+  @media screen and (max-width: 840px){
+    margin: 0 auto 2rem;
+  }
+
   .paginationBtns {
     color: ${({theme}) => theme.primary};
     display: flex;
@@ -77,6 +82,10 @@ export const PostBlogIndividualContainer = styled.div`
   box-shadow: 0px 10px 20px 10px rgba(211, 211, 211, 0.2);
   margin-bottom: 6.25rem;
 
+  @media screen and (max-width: 840px){
+    margin-bottom: 3rem;
+  }
+
   .postcard__infos {
     position: relative;
     padding: 2.43rem 1rem;    
@@ -108,6 +117,22 @@ export const PostBlogIndividualContainer = styled.div`
           text-transform: capitalize;
         }
       }
+
+      @media screen and (max-width: 490px){
+        width: 60px;
+        height: 60px;
+        top: -35px;
+        left: 30px;
+
+        span {
+          font-size: 1.2rem;
+
+          &:last-child {
+            font-size: 1.2rem;
+            margin-bottom: 0;
+          }
+        }
+      } 
     }
 
     h3 {
@@ -123,6 +148,10 @@ export const PostBlogIndividualContainer = styled.div`
       color: ${({theme}) => theme.secondary};
       font-family: 'Mulish', sans-serif;
       margin-bottom: 2.5rem;
+
+      @media screen and (max-width: 490px){
+        text-align: justify;
+      }
     }
 
     .postcard__infos__bottom {
@@ -156,6 +185,15 @@ export const PostBlogIndividualContainer = styled.div`
         display: flex;
         align-items: center;
       }
+
+      @media screen and (max-width: 490px){
+        flex-direction: column;
+        align-items: flex-start;
+
+        .postcard__categories {
+          margin-bottom: 1rem;
+        }
+      }
     }
     
   }
@@ -169,6 +207,11 @@ export const ImgPost = styled.div`
   width: 100%;
   max-width: 750px;
   height: 375px;
+
+  @media screen and (max-width: 490px){
+    max-width: 490px;
+    height: 200px;
+  }
 `
 
 export const AuthorPostImg = styled.div`
