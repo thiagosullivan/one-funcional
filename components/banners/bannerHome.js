@@ -4,7 +4,7 @@ import { BannerHomeContainer, BannerHomeContent } from './styles';
 
 function BannerHome() {
   return (
-    <BannerHomeContainer bgUrl="https://raw.githubusercontent.com/thiagosullivan/one-funcional/main/assets/banner-home-opt.webp">
+    <BannerHomeContainer bgUrl="https://raw.githubusercontent.com/thiagosullivan/one-funcional/main/assets/one-banner-hero.webp">
       <BannerHomeContent>
         <div className='bannerhome__txt'>
           <p>Esculpa seu corpo</p>
