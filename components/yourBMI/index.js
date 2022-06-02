@@ -87,7 +87,7 @@ function YourBMI() {
 
 
   return (
-    <YourBMIContainer brUrl="https://raw.githubusercontent.com/thiagosullivan/one-funcional/main/assets/imc-bg-opt-min.webp">
+    <YourBMIContainer brUrl="https://raw.githubusercontent.com/thiagosullivan/one-funcional/main/assets/imc-bg-opt.jpg">
       <YourBMIContent>
         <h2>Qual é o seu <span>IMC</span> ?</h2>
         <BMICalculatorContainer>
