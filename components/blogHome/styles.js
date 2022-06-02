@@ -110,7 +110,7 @@ export const PostCardHome = styled.div`
       justify-content: space-between;
       text-transform: uppercase;
       
-      .postcard__date {        
+      .postcard__date {
         span {
           font-family: 'Mulish', sans-serif !important;
           color: ${({theme}) => theme.secondary};

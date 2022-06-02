@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { AboutUsBottom, AboutUsContainer, AboutUsList, AboutUsText, AboutUsTop } from './styles'
-import AboutUsImg from '../../assets/about-us-woman-gym-opt.webp';
+import AboutUsImg from '../../assets/section-one-img-min.webp';
 import { BsArrowRightShort } from 'react-icons/bs';
 
 function AboutUs() {
