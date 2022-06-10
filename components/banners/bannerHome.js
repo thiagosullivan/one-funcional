@@ -7,10 +7,10 @@ function BannerHome() {
     <BannerHomeContainer bgUrl="https://raw.githubusercontent.com/thiagosullivan/one-funcional/main/assets/one-banner-hero.webp">
       <BannerHomeContent>
         <div className='bannerhome__txt'>
-          <p>Esculpa seu corpo</p>
-          <h1>Seja <span>Forte</span><br/>Treine pesado</h1>
+          <p>Mude de vida</p>
+          <h1>Seja <span>One</span><br/>Saúde Integral</h1>
           <Link href="/" passHref>
-            Mais informações
+            Fale Conosco
           </Link>
         </div>
       </BannerHomeContent>

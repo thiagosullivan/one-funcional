@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const WhyChoseUsContainer = styled.section`
   background-color: ${({theme}) => theme.secondary};
-  padding: 6.8rem 0;
+  padding: 3rem 0;
 
   @media screen and (max-width: 500px){
     padding: 3rem 0;
@@ -38,6 +38,24 @@ export const WhyChoseUsContent = styled.div`
   @media screen and (max-width: 500px){
     h2, p {
       font-size: 1.7rem;
+    }
+  }
+
+  .postcontainer__btn {
+    border: 2px solid ${({theme}) => theme.primary};
+    color: ${({theme}) => theme.primary};
+    padding: 0.93rem 3rem;
+    text-transform: uppercase;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    transition: all 150ms ease-in-out;
+    margin: 0 auto;
+    max-width: 290px;
+    display: flex;
+    
+    &:hover {
+      background-color: ${({theme}) => theme.primary};
+      color: ${({theme}) => theme.secondary};
     }
   }
 `;

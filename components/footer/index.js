@@ -57,7 +57,11 @@ function Footer() {
               Guanabara, Londrina - PR<br/>
               86050-020</p>
               <p><a href="tel:+5543999829722"><strong>Telefone:</strong> &#40;43&#41; 3339-7334</a><br />
-              &#40;43&#41; 99982-9722</p>
+              <a
+                href="https://api.whatsapp.com/send?phone=5543999829722"
+                rel="noreferrer noopener"
+                target="_blank"
+              >&#40;43&#41; 99982-9722</a></p>
               <p><a href="mailto:contato@onefuncional.com.br"><strong>E-mail:</strong> contato@onefuncional.com.br</a></p>
             </div>
           </div>

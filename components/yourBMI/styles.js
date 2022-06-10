@@ -18,7 +18,7 @@ export const YourBMIContent = styled.section`
   max-width: 1300px;
   width: 100%;
   margin: 0 auto;
-  padding: 10rem 1rem;
+  padding: 5rem 1rem;
 
   h2 {
     font-size: 5rem;

@@ -8,7 +8,7 @@ export const BlogHomeContent = styled.div`
   max-width: 1300px;
   width: 100%;
   margin: 0 auto;
-  padding: 6.8rem 1rem;
+  padding: 3rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;

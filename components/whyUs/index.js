@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 import equipamentos from '../../assets/equipamentos.png';
 import plano from '../../assets/plano.png';
@@ -62,6 +63,16 @@ function WhyChoseUs() {
             <p>Na One Funcional você conta com atendimento de uma equipe médica especializada em Fisioterapia, Nutrição e Saúde Integral.</p>
           </div>
         </WhyChoseUsBottom>
+        <Link href="/blog">
+          <a
+            className="postcontainer__btn"
+            href="https://api.whatsapp.com/send?phone=5543999829722"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            Chame no Whatsapp
+          </a>
+        </Link>
       </WhyChoseUsContent>
     </WhyChoseUsContainer>
   )

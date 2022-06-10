@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const AboutUsContainer = styled.section`
-  padding: 3rem 2rem 9.3rem;
+  padding: 3rem 2rem 3rem;
   
   @media screen and (max-width: 980px){
     padding: 3rem 2rem;

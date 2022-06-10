@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const OurPriceContainer = styled.section`
   background-color: ${({theme}) => theme.third};
-  padding: 6.8rem 1rem 6.8rem ;
+  padding: 3rem 1rem 3rem ;
 
   @media screen and (max-width: 500px){
     padding: 3rem 1rem;
@@ -125,11 +125,13 @@ export const OurPriceCard = styled.div`
       margin-bottom: 0.62rem;
       display: flex;
       align-items: center;
+      font-weight: 600;
     }
 
     svg {
       color: ${({theme}) => theme.primary};
       font-size: 2rem;
+      min-width: 32px;
     }
   }
 
@@ -158,3 +160,30 @@ export const OurPriceCard = styled.div`
   }
 `;
 
+export const OurPriceBottom = styled.div`
+  margin-top: 3rem;
+
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .postcontainer__btn {
+    border: 2px solid ${({theme}) => theme.primary};
+    color: ${({theme}) => theme.primary};
+    padding: 0.93rem 3rem;
+    text-transform: uppercase;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    transition: all 150ms ease-in-out;
+    margin: 0 auto;
+    max-width: 245px;
+    display: flex;
+    justify-content: center;
+
+    &:hover {
+      background-color: ${({theme}) => theme.primary};
+      color: ${({theme}) => theme.secondary};
+    }
+  }
+`

@@ -2,7 +2,7 @@ import { darken } from 'polished';
 import styled from "styled-components";
 
 export const OurTeamContainer = styled.section`
-  padding: 6.8rem 0;
+  padding: 3rem 0;
 
   @media screen and (max-width: 500px){
     padding: 3rem 0;
