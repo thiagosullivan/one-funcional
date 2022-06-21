@@ -68,7 +68,7 @@ function OurTeam({team}) {
         <p className='ourTeam__subtitle'>Conheça nossos profissionais</p>
 
         <OurTeamSlider>
-          <p>Sed in mauris nulla. Donec sed lorem interdum, molestie libero in, pellentesque dui. Phasellus ultricies magna at est tincidunt, quis.</p>
+          <p>Na One Funcional você conta com o apoio de profissionais qualificados e especializados. Nosso time é coordenado por profissionais de destaque no mercado de saúde integral.</p>
           <SliderContainer
             iconLeft="https://raw.githubusercontent.com/thiagosullivan/one-funcional/df8b64778010f9eb4d1aabca7babd4adc8aae37b/assets/angle-left-solid.svg"
             iconRight="https://raw.githubusercontent.com/thiagosullivan/one-funcional/df8b64778010f9eb4d1aabca7babd4adc8aae37b/assets/angle-right-solid.svg"

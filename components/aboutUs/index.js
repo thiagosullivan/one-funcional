@@ -22,15 +22,15 @@ function AboutUs() {
           <AboutUsList>
             <li>
               <BsArrowRightShort />
-              <p>Men fitness and workout</p>
+              <p>Treinamento Personalizado</p>
             </li>
             <li>
               <BsArrowRightShort />
-              <p>Women fitness and workout</p>
+              <p>Clínica Especializada</p>
             </li>
             <li>
               <BsArrowRightShort />
-              <p>Personal trainings</p>
+              <p>Metodologia Exclusiva</p>
             </li>
           </AboutUsList>
         </AboutUsText>
